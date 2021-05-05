@@ -1,13 +1,12 @@
 /*Anushika p j */
-CREATE TABLE BRANCHES(
-    BranchID int,
-    LastName varchar(255),
-    FirstName varchar(255),
-    Address varchar(255),
-    City varchar(255)
+create table branches(
+    BranchID        int             not null,
+    BranchName      varchar(255)    not null,
+    District        varchar(50)     not null,
+    City            varchar(255)    not null,
+    ContactNum      varchar(15)     not null,
+    Pin_code        varchar(10)     not null
 )
-
-
 
 
 /*JUBIT*/
@@ -15,7 +14,15 @@ CREATE TABLE BRANCHES(
 
 
 /*AAKHIL*/
-
+create table staff(
+    StaffID         int             not null,
+    StaffName       varchar(255)    not null,
+    District        varchar(50)     not null,
+    City            varchar(255)    not null,
+    PhoneNum        varchar(15)     not null,
+    email           varchar(10)     not null,
+    BranchName      varchar(255)    not null
+)
 
 
 /*JOUHAR*/
