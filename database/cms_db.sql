@@ -27,9 +27,6 @@ create table branches(
      p_price        float NOT NULL,
      p_status       text NOT NULL,
 
-
-
-
  );
 
 
