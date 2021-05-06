@@ -12,7 +12,7 @@ create table branches (
 
 INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
 
- VALUE
+ VALUES
  /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
   (3,  '20',     'secondbranch', 'Idukki',      'kochi2',  '+91098765432',   '682021'),
