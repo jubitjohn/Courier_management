@@ -30,6 +30,11 @@ create table branches (
 
  );
 
+ INSERT INTO parcel('id',reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_height,p_price,p_status)
+ VALUES (1,'12345678','jubit john','kizhakkemuri (h)','7356771642','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,300,'Order Received'),
+        (1,'12345678','john','kizhakkemuri (h)','2352523','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,350,'Order Received');
+
+
 
 create table staff(
     id           int(20) NOT NULL AUTO_INCREMENT,
