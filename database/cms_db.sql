@@ -1,18 +1,20 @@
 /*Anushika p j */
 create table branches(
+    id           int(20) NOT NULL AUTO_INCREMENT,
     BranchID        int             not null,
     BranchName      varchar(255)    not null,
     District        varchar(50)     not null,
     City            varchar(255)    not null,
     ContactNum      varchar(15)     not null,
     Pin_code        varchar(10)     not null
-)
+     PRIMARY KEY(id)
+);
 
 
 /*JUBIT*/
 -- Table for parcel
  CREATE TABLE parcel(
-     id           int(20) NOT NULL,
+     id           int(20) NOT NULL AUTO_INCREMENT,
      reference_no int(20) NOT NULl,
      sender_name  varchar(50) NOT NULL,
      sender_address text NOT NULl,
@@ -25,7 +27,8 @@ create table branches(
      p_weight       varchar(30),
      p_height       varchar(30),
      p_price        float NOT NULL,
-     p_status       text NOT NULL
+     p_status       text NOT NULL,
+     PRIMARY KEY(id)
 
  );
 
@@ -35,14 +38,16 @@ create table branches(
 
 /*AAKHIL*/
 create table staff(
+    id           int(20) NOT NULL AUTO_INCREMENT,
     StaffID         int             not null,
     StaffName       varchar(255)    not null,
     District        varchar(50)     not null,
     City            varchar(255)    not null,
     PhoneNum        varchar(15)     not null,
     email           varchar(10)     not null,
-    BranchName      varchar(255)    not null
-)
+    BranchName      varchar(255)    not null,
+    PRIMARY KEY(id)
+);
 
 
 /*JOUHAR*/
