@@ -6,7 +6,7 @@ create table branches(
     District        varchar(50)     not null,
     City            varchar(255)    not null,
     ContactNum      varchar(15)     not null,
-    Pin_code        varchar(10)     not null
+    Pin_code        varchar(10)     not null,
      PRIMARY KEY(id)
 );
 
