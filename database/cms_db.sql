@@ -1,6 +1,6 @@
 
 create table branches (
-    id           int(20) NOT NULL AUTO_INCREMENT,
+    ID          int(20) NOT NULL AUTO_INCREMENT,
     BranchID        int             not null,
     BranchName      varchar(255)    not null,
     District        varchar(50)     not null,
@@ -9,7 +9,7 @@ create table branches (
     Pin_code        varchar(10)     not null,
     PRIMARY KEY(id)
 );
-INSERT INTO `branches` (`id`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
+INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
  VALUE
  /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
