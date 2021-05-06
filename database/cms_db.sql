@@ -1,6 +1,6 @@
 
 create table branches (
-    id           int(20) NOT NULL AUTO_INCREMENT,
+    ID          int(20) NOT NULL AUTO_INCREMENT,
     BranchID        int             not null,
     BranchName      varchar(255)    not null,
     District        varchar(50)     not null,
@@ -9,7 +9,9 @@ create table branches (
     Pin_code        varchar(10)     not null,
     PRIMARY KEY(id)
 );
-INSERT INTO `branches` (`id`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
+
+INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
+
  VALUE
  /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
@@ -36,7 +38,7 @@ INSERT INTO `branches` (`id`, `BranchID`, `BranchName`, ` District `, ` City`, `
 
  );
 
- INSERT INTO parcel('id',reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_height,p_price,p_status)
+ INSERT INTO parcel(id,reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_height,p_price,p_status)
  VALUES (1,'12345678','jubit john','kizhakkemuri (h)','7356771642','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,300,'Order Received'),
         (1,'12345678','john','kizhakkemuri (h)','2352523','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,350,'Order Received');
 
