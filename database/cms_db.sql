@@ -1,4 +1,4 @@
-/*Anushika p j */
+/*Anushika p j */;
 create table branches(
     id           int(20) NOT NULL AUTO_INCREMENT,
     BranchID        int             not null,
@@ -12,7 +12,7 @@ create table branches(
 
 
 /*JUBIT*/
--- Table for parcel
+-- Table for parcel;
  CREATE TABLE parcel(
      id           int(20) NOT NULL AUTO_INCREMENT,
      reference_no int(20) NOT NULl,
@@ -36,7 +36,7 @@ create table branches(
 
 
 
-/*AAKHIL*/
+/*AAKHIL*/;
 create table staff(
     id           int(20) NOT NULL AUTO_INCREMENT,
     StaffID         int             not null,
@@ -50,7 +50,7 @@ create table staff(
 );
 
 
-/*JOUHAR*/
+/*JOUHAR*/;
 CREATE TABLE parcel_tracks (
     id int(30) NOT NULL,
     parcel_id int(30) NOT NULL,
