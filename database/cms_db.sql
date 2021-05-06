@@ -9,7 +9,9 @@ create table branches (
     Pin_code        varchar(10)     not null,
     PRIMARY KEY(id)
 );
+
 INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
+
  VALUE
  /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
