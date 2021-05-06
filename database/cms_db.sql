@@ -7,10 +7,18 @@ create table branches (
     City            varchar(255)    not null,
     ContactNum      varchar(15)     not null,
     Pin_code        varchar(10)     not null,
-    PRIMARY KEY(id)
+    PRIMARY KEY(ID)
 );
+
 INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, ` ContactNum `, ` Pin_code`)
- VALUES
+ VALUES 
+ /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
+  (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
+  (3,  '20',     'secondbranch', 'Idukki',      'kochi2',  '+91098765432',   '682021'),
+  (4,  '30',     'thirdbranch',  'Kollam',      'kochi3',  '+91234509876',   '682022');
+
+
+
  /*id  BranchID   BranchName     District        City      ContactNum         Pin_code */
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
   (3,  '20',     'secondbranch', 'Idukki',      'kochi2',  '+91098765432',   '682021'),
@@ -36,7 +44,7 @@ INSERT INTO `branches` (`ID`, `BranchID`, `BranchName`, ` District `, ` City`, `
 
  );
 
- INSERT INTO parcel('id',reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_height,p_price,p_status)
+ INSERT INTO parcel(id,reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_height,p_price,p_status)
  VALUES (1,'12345678','jubit john','kizhakkemuri (h)','7356771642','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,300,'Order Received'),
         (1,'12345678','john','kizhakkemuri (h)','2352523','Jerin','kottaikkal','9078263635','123','321',NULL,NULL,350,'Order Received');
 
