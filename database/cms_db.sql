@@ -10,6 +10,27 @@ create table branches(
 
 
 /*JUBIT*/
+-- Table for parcel
+ CREATE TABLE parcel(
+     id           int(20) NOT NULL,
+     reference_no int(20) NOT NULl,
+     sender_name  varchar(50) NOT NULL,
+     sender_address text NOT NULl,
+     sender_contact text NOT NULL,
+     Recipient_name varchar(50) NOT NULL,
+     from_branch_id varchar(30),
+     to_branch_id   varchar(30),
+     p_weight       varchar(30),
+     p_height       varchar(30),
+     p_price        float NOT NULL,
+     p_status       text NOT NULL,
+
+
+
+
+ );
+
+
 
 
 
