@@ -25,7 +25,7 @@ create table branches(
      p_weight       varchar(30),
      p_height       varchar(30),
      p_price        float NOT NULL,
-     p_status       text NOT NULL,
+     p_status       text NOT NULL
 
  );
 
