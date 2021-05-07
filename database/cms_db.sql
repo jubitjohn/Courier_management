@@ -54,7 +54,14 @@ create table staff(
     BranchName      varchar(255)    not null,
     PRIMARY KEY(id)
 );
+INSERT INTO staff(StaffID, StaffName, District, City, PhoneNum, email, BranchName)
 
+ VALUES
+  (1,  'Ellen',     'Ernakulam',     'Kalamassery',        '+911335587892',   'ellen.352@gmail.com',   'firstbranch'),
+  (3,  'Claire',    'Kottayam',      'Changanassery',      '+910982454323',   'claire@gmail.com',      'secondbranch'),
+  (4,  'Ben',       'Trivandrum',    'Pattom',             '+912572098764',   'benjohn@gmail.com',     'thirdbranch');
+
+  
 
 CREATE TABLE parcel_tracks (
     id int(30) NOT NULL AUTO_INCREMENT,
