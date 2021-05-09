@@ -13,48 +13,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body class="container p-4  bg-danger text-white">
+<body class="container p-4 bg-secondary text-white">
     <div>
-        <div class="row bg-danger ">
+        <div class="row bg-light ">
 
             <div class="card-body col-md-8 bg-dark">
                 <h2>Courier Management systems</h2>
             </div>
-            <div class="col-4 bg-gradient text-center card-body"><a
-                    class="text-center card-link text-decoration-none text-dark" href="#">
-                    <h2>Admin Login</h2>
-                </a>
+            <div class="col-2 bg-gradient text-center card-body ">
+                <div class="mt-2"><a class="  text-center card-link text-decoration-none text-dark" href="#">
+                        <h4>Admin Login</h4>
+                    </a></div>
 
             </div>
 
 
         </div>
 
-        <div class="row h-25">
-            <div class="col text-lg-center text-black-50  " style="background-color:lavender;">
-                Just relax</div>
-        </div>
-        <div class="row bg-danger ">
-            <h2 class="col-12 text-center card-body">
-                <div class="card-text">Track Your Order</div>
-            </h2>
+        <div class="bg-gradient mt-5 ">
+            <div class="row ">
+                <h2 class="col-12 text-center card-body">
+                    <div class="card-text">Track Your Order</div>
+                </h2>
 
-        </div>
-        <div class="row bg-danger ">
-            <h2 class="col-12 text-center card-body">
-                <div class="card-text h4">Enter Your tracking Id :</div>
-            </h2>
+            </div>
+            <div class="row">
+                <h2 class="col-12 text-center card-body">
+                    <div class="card-text h4">Enter Your tracking Id :</div>
+                </h2>
 
-        </div>
-        <div class="row">
-            <form action="/action_page.php" class="row">
-                <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid"
-                        name="trackid"><br><br>
-                </div>
+            </div>
+            <div class="row">
+                <form action="/action_page.php" class="row">
+                    <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid"
+                            name="trackid"><br><br>
+                    </div>
 
 
-            </form>
+                </form>
+            </div>
         </div>
+
 
     </div>
 </body>
