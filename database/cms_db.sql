@@ -72,8 +72,12 @@ CREATE TABLE parcel_tracks (
 
 
 
+INSERT INTO parcel_tracks (id, parcel_id, parcel_status);
 
 
+VALUES
+ ('1','456','Order Shipped');
+ ('2','654','Order Delivered');
 
 
 
@@ -156,9 +160,10 @@ CREATE TABLE parcel_tracks (
 
 
 
---anushika
 
---jouhar
 
---aakhil
+
+
+
+
 
