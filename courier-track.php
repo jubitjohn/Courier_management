@@ -6,11 +6,7 @@
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" />
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body class="container p-4 bg-secondary text-white">
