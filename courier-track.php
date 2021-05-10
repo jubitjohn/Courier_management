@@ -41,17 +41,24 @@
             </div>
             <div class="row">
                 <form action="/action_page.php" class="row">
-                    <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid"
-                            name="trackid"><br><br>
+                    <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid" name="trackid"><br><br>
                     </div>
 
 
                 </form>
             </div>
+
         </div>
 
 
+
     </div>
+
+    <footer class="fixed-bottom">
+        <div class="text-center p-4">&copy courier management systems <?php echo date('Y'); ?>
+        </div>
+    </footer>
+
 </body>
 
 </html>
