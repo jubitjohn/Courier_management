@@ -42,8 +42,12 @@
             <div class="row">
                 <form action="courier-track-details.php" method="post" class="row">
                     <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
-                            name="trackid"><br><br>
+                            name="trackid">
+                        <div class="row  "> <input class="col" type="submit" name="track" value="Track"><br><br>
+                        </div>
                     </div>
+                    <br><br>
+
 
 
                 </form>
