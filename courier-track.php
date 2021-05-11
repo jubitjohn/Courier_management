@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <form action="/action_page.php" class="row">
-                    <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid" name="trackid"><br><br>
+                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="trackid" name="trackid"><br><br>
                     </div>
 
 
