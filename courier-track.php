@@ -40,8 +40,9 @@
 
             </div>
             <div class="row">
-                <form action="/action_page.php" class="row">
-                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="trackid" name="trackid"><br><br>
+                <form action="courier-track-details.php" method="post" class="row">
+                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
+                            name="trackid"><br><br>
                     </div>
 
 
