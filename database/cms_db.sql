@@ -72,7 +72,7 @@ CREATE TABLE parcel_tracks (
 
 
 
-INSERT INTO parcel_tracks (id, parcel_id, parcel_status);
+INSERT INTO parcel_tracks(id,parcel_id,parcel_status)
 
 
 VALUES
