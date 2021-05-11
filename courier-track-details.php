@@ -43,13 +43,12 @@ $ref = $_POST['trackid'];
 
             </div>
             <div class="row">
-                <form action="courier-track-details.php" method=class="row">
-                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
-                            name="trackid"><br><br>
-                    </div>
+                <div class="col-12 text-center text-capitalize align-content-center">
+                    <dl>
+                        <dd></dd>
+                    </dl>
+                </div>
 
-
-                </form>
             </div>
 
         </div>
