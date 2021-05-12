@@ -6,7 +6,7 @@ $ref = $_POST['trackid'];
 include_once('db_connect.php')
 ?>
 <?php
-$query = "SELECT * FROM parcel WHERE `reference_no`=$ref";
+$query = "SELECT * FROM parcel WHERE `reference_no`= $ref";
 $result_set = mysqli_query($conn, $query);
 $track = mysqli_fetch_assoc($result_set);
 ?>
@@ -30,7 +30,7 @@ $track = mysqli_fetch_assoc($result_set);
             </div>
             <div class="col-2 bg-gradient text-center card-body ">
                 <div class="mt-2"><a class="  text-center card-link text-decoration-none text-dark" href="#">
-                        <h4>Admin Login</h4>
+                        <h4>Admin Login </h4>
                     </a></div>
 
             </div>
