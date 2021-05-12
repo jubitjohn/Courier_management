@@ -24,5 +24,3 @@ echo '<br>';
 echo 'Host information: ' . $conn->host_info;
 echo '<br>';
 echo 'Protocol version: ' . $conn->protocol_version;
-
-$conn->close();
