@@ -1,3 +1,6 @@
+<?php
+$ref = $_POST['trackid'];
+?>
 <html>
 
 <head>
@@ -35,22 +38,18 @@
             </div>
             <div class="row">
                 <h2 class="col-12 text-center card-body">
-                    <div class="card-text h4">Enter Your tracking Id :</div>
+                    <div class="card-text h4"><?php echo "Reference no :" . $ref ?></div>
                 </h2>
 
             </div>
             <div class="row">
-                <form action="courier-track-details.php" method="post" class="row">
-                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
-                            name="trackid">
-                        <div class="row  "> <input class="col" type="submit" name="track" value="Track"><br><br>
-                        </div>
-                    </div>
-                    <br><br>
+                <div class="col-12 text-center text-capitalize align-content-center">
+                    <dl>
+                        <dd class="card-body"><b>In-transit</b></dd>
+                        <dd><b>Order placed on</b></dd>
+                    </dl>
+                </div>
 
-
-
-                </form>
             </div>
 
         </div>
