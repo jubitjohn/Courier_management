@@ -1,5 +1,14 @@
 <?php
+
 $ref = $_POST['trackid'];
+?>
+<?php
+include_once('db_connect.php')
+?>
+<?php
+$query = "SELECT * FROM parcel WHERE `reference_no`=$ref";
+$result_set = mysqli_query($conn, $query);
+$track = mysqli_fetch_assoc($result_set);
 ?>
 <html>
 
@@ -45,8 +54,8 @@ $ref = $_POST['trackid'];
             <div class="row">
                 <div class="col-12 text-center text-capitalize align-content-center">
                     <dl>
-                        <dd class="card-body"><b>In-transit</b></dd>
-                        <dd><b>Order placed on</b></dd>
+                        <dd class="card-body"><b><?php echo $track["sender_name"]; ?> </b></dd>
+                        <dd><b><?php echo $track["sender_contact"]; ?></b></dd>
                     </dl>
                 </div>
 
