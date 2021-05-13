@@ -18,11 +18,3 @@ if ($conn->connect_error) {
     echo 'Error: ' . $conn->connect_error;
     exit();
 }
-
-echo 'Success: A proper connection to MySQL was made.';
-echo '<br>';
-echo 'Host information: ' . $conn->host_info;
-echo '<br>';
-echo 'Protocol version: ' . $conn->protocol_version;
-
-$conn->close();
