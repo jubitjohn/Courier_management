@@ -6,9 +6,16 @@ $ref = $_POST['trackid'];
 include_once('db_connect.php')
 ?>
 <?php
-$query = "SELECT * FROM parcel WHERE `reference_no`= $ref";
+$query = "SELECT * FROM parcel_tracks WHERE `parcel_id`= $ref";
 $result_set = mysqli_query($conn, $query);
 $track = mysqli_fetch_assoc($result_set);
+$p_id = $track["id"];
+$query_p = "SELECT * FROM parcel WHERE `id`= $p_id";
+$result_set_p = mysqli_query($conn, $query_p);
+$parcel = mysqli_fetch_assoc($result_set_p);
+
+
+
 ?>
 <html>
 
@@ -45,17 +52,54 @@ $track = mysqli_fetch_assoc($result_set);
                 </h2>
 
             </div>
-            <div class="row">
-                <h2 class="col-12 text-center card-body">
-                    <div class="card-text h4"><?php echo "Reference no :" . $ref ?></div>
-                </h2>
+            <div class="row d-flex justify-content-center ">
+
+                <div class="col-5 text-center">
+                    <h3 class="bg-success"><?php echo "Tracking id :" . $ref ?></h3>
+                </div>
+
 
             </div>
-            <div class="row">
-                <div class="col-12 text-center text-capitalize align-content-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 text-capitalize text-center ">
                     <dl>
-                        <dd class="card-body"><b><?php echo $track["sender_name"]; ?> </b></dd>
-                        <dd><b><?php echo $track["sender_contact"]; ?></b></dd>
+                        <dd class=" bg-danger ">
+                            <b><?php echo "Reference no : " . $parcel["reference_no"]; ?> </b>
+                        </dd>
+
+                    </dl>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 text-capitalize text-center ">
+                    <dl>
+                        <dd class=" bg-danger ">
+                            <b><?php echo $parcel["from_branch_id"]; ?> </b>
+                        </dd>
+
+                    </dl>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 text-capitalize text-center ">
+                    <dl>
+                        <dd class=" bg-danger ">
+                            <b><?php echo $parcel["to_branch_id"]; ?> </b>
+                        </dd>
+
+                    </dl>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 text-capitalize text-center ">
+                    <dl>
+                        <dd class=" bg-danger ">
+                            <b><?php echo $track["parcel_status"]; ?> </b>
+                        </dd>
+
                     </dl>
                 </div>
 
