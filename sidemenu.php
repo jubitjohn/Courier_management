@@ -83,7 +83,7 @@
 
                 <li>
                     <a href="#">
-                        <i class='bx bx-box'></i>
+                    <i class='bx bx-list-ul'></i>
                         <span class="link_names"> LIST PARCELS</span>
 
                      </a>
