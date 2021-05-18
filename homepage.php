@@ -17,7 +17,7 @@
 
     <div class="home_content">
 
-
+    <?php include('header.php') ?>
 
 
         <div class="text">Welcome Home</div>
