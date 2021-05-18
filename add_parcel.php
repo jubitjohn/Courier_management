@@ -1,50 +1,58 @@
+<?php include('sidemenu.php') ?>;
+<?php include('header.php') ?>;
+
+
 <head><?php include('library.php') ?>;
     <link rel="stylesheet" href="css/add_parcel.css" />
 </head>
 
-<body>
-    <?php include('sidemenu.php') ?>;
-    <?php include('header.php') ?>;
+<body class="overflow-auto">
     <div class="n_parcel">
 
         <div class="card">
             <div class="card-body">
                 <form action="" id="p_manage">
                     <div class="row ">
-                        <div class="col-lg-6 bg-info card-body">
+                        <div class="col-lg-6  card-body">
                             <b>Sender Information</b>
-                            <div class=" card card-body">
-                                <label> Name</label>
-                                <input type="text" name="sender-name" placeholder="name">
+                            <div class="card card-body">
+                                <div class=" card card-body">
+                                    <label> Name</label>
+                                    <input type="text" name="sender-name" placeholder="name">
+                                </div>
+                                <div class=" card card-body">
+                                    <label> Sender address</label>
+                                    <input type="text" name="sender-ad">
+                                </div>
+                                <div class=" card card-body">
+                                    <label> Contact</label>
+                                    <input type="text" name="sender-contact" placeholder="eg 6574637874">
+                                </div>
                             </div>
-                            <div class=" card card-body">
-                                <label> Sender address</label>
-                                <input type="text" name="sender-ad">
-                            </div>
-                            <div class=" card card-body">
-                                <label> Contact</label>
-                                <input type="text" name="sender-contact" placeholder="eg 6574637874">
-                            </div>
+
 
 
 
 
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 card-body">
                             <b>Receiver Information</b>
-                            <div class=" card card-body">
-                                <label> Name</label>
-                                <input type="text" name="receiver-name" placeholder="name">
+                            <div class="card card-body">
+                                <div class=" card card-body">
+                                    <label> Name</label>
+                                    <input type="text" name="receiver-name" placeholder="name">
+                                </div>
+                                <div class=" card card-body">
+                                    <label> Receiver address</label>
+                                    <input type="text" name="receiver-ad" placeholder="">
+                                </div>
+                                <div class=" card card-body">
+                                    <label> Contact</label>
+                                    <input type="text" name="receiver-contact" placeholder="name">
+                                </div>
                             </div>
-                            <div class=" card card-body">
-                                <label> Receiver address</label>
-                                <input type="text" name="receiver-ad" placeholder="">
-                            </div>
-                            <div class=" card card-body">
-                                <label> Contact</label>
-                                <input type="text" name="receiver-contact" placeholder="name">
-                            </div>
+
 
 
 
@@ -74,7 +82,7 @@
 
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4  card card-body">
                             <b>Branch Information</b>
                             <div class=" card card-body">
                                 <label> From Branch (id)</label>
@@ -84,15 +92,17 @@
                                 <label> To Branch (id)</label>
                                 <input type="text" name="to_branch" placeholder="">
                             </div>
+                            <br>
+                            <div class="row d-flex justify-content-center">
+                                <input class="btn btn-success col-lg-8" type="submit" name="Save" value=" Save">
+                            </div>
 
 
 
                         </div>
                     </div>
                     <br>
-                    <div class="row d-flex justify-content-center">
-                        <input class="btn btn-success col-lg-6" type="submit" name="Save" value=" Save">
-                    </div>
+
                 </form>
 
             </div>
