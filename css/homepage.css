@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    /*overflow: hidden;*/
+    width: 100%;
+}
+
+.sidebar{
+    width: 78px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top:0;
+    padding: 6px 14px;
+    background: darkred;
+    transition: all 0.5s ease;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+  }
+
+.sidebar.active {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 270px;
+}
+
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logo_content .logo{
+  opacity: 1;
+  pointer-events: none;
+}
+.logo_content .logo i{
+    font-size: 58px;
+    margin-right: 5px;
+}
+
+.sidebar.active .logo_content  .bx-menu{
+    margin-left: 110px;
+}
+.logo_content .logo .logo_name{
+    font-size: 100px;
+    font-weight: 700;
+    
+}
+
+.sidebar #btn{
+    position:absolute;
+    color:#fff;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.sidebar .active #btn{
+ left: 90%;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height:50px;
+}
+.sidebar ul li ul li{
+opacity: 0;
+
+}
+.sidebar.active ul li ul.sub_menu li{
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    transition:all 0.5s ease;
+    margin-top: -50px;
+}
+.sidebar ul li .tooltip{
+position: absolute;
+left: 122px;
+top: 50%;
+transform:translate(-50%, -50%);
+border-radius: 6px;
+height: 35px;
+width:122px;
+background: #fff;
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+line-height: 35px;
+text-align: center;
+transition: 0s;
+opacity:0;
+pointer-events: none;
+display: block;
+}
+.sidebar ul li .tooltip1{
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 6px;
+    height: 55px;
+    width:122px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    line-height: 25px;
+    text-align: center;
+    transition: 0s;
+    opacity:0;
+    pointer-events: none;
+    display: block;
+    }
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.sidebar.active ul li .tooltip1{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+ transition: all 0.5s ease;
+ top: 50%;
+ opacity: 0;
+ 
+ 
+}
+.sidebar ul li:hover .tooltip1{
+    transition: all 0.5s ease;
+    top: 50%;
+    opacity: 0;
+   }
+.sidebar ul li .bx-search{
+    position:absolute;
+    z-index: 99;
+    color: white;
+    font-size: 25px;
+    transition: all 0.5 ease;
+}
+
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius:12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar ul li .bx-search:hover{
+    background: #fff;
+    color:darksalmon;
+}
+
+.sidebar .link_names{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .link_names{
+    opacity:1;
+    pointer-events: auto;
+}
+::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background:  rgb(197, 65, 87);
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover{
+  color: #11101d;
+  background: #fff;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius:12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.home_content{
+    width: calc(100%-78px);
+    position: absolute;
+    height: 100%;
+    left: 78px;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .home_content{
+    width: calc(100%-270px);
+    left: 270px;
+}
+
+
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin-left: 12px;
+    width: calc(100%-78px);
+    border-bottom: 1px solid blue;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.home_content  div ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ div.home{
+    width: calc(100%-78px);
+    
+}
+ div.home h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin-left: 12px;
+    width: calc(100%-78px);
+    border-bottom: 1px solid blue;
+    display: none;
+ }
+ section.body{
+     padding-bottom: 20px;
+ }
+ section.body div.cards div.row{
+     padding:  5px 20px;
+     width: 1000px;
+    /* width should be changed according to lap size*/
+     
+ }
+ section.body div.cards div.row ul{
+     display: flex;
+     justify-content:space-between;
+     list-style: none;
+    
+ }
+ 
+ section.body div.cards div.row ul li{
+     height: 155px;
+     width: 32.9%;
+     background: pink;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     border-radius: 4px;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ 
+ }
+ section.body div.cards div.row ul li h1{
+     font-size: 50px;
+     padding-bottom: 15px;
+ }
+ section.body div.cards div.row ul li i{
+    font-size: 50px;
+    color: grey;
+ }
+
+ section.body div.cards div.row ul li i:hover{
+     font-size: 70px;
+     transition:all ease 0.5s;
+ }
+ ::-webkit-scrollbar {
+     width: 5px;
+   }
+   
+   ::-webkit-scrollbar-track {
+     background: transparent !important;
+   }
+   
+   ::-webkit-scrollbar-thumb {
+     background: #bbbbbb;
+     border-radius: 10px;
+   }
