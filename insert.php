@@ -1,5 +1,5 @@
+<?php include('db_connect.php') ?>;
 <?php
-$con = mysqli_connect('127.0.0.1', 'root', '','db_couriers');
 if (!$con) {
     echo "Not connected To Server";
 }
