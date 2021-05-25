@@ -66,7 +66,7 @@
         <nav>
             <div class="heading">Courier management service</div>
             <ul>
-                <li><a class="active" href="#">Logout</a></li>
+                <li><a class="active" href="login.php">Logout</a></li>
             </ul>
         </nav>
     </div>
