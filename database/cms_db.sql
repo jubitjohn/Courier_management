@@ -69,15 +69,10 @@ CREATE TABLE parcel_tracks (
     parcel_status text NOT NULL, 
     PRIMARY KEY(id)
 );
-
-
-
 INSERT INTO parcel_tracks(id,parcel_id,parcel_status)
+VALUES (1,'456','Order Shipped'),
+       (2,'654','Order Delivered');
 
-
-VALUES
- (1,'456','Order Shipped'),
- (2,'654','Order Delivered');
 
 
 
