@@ -142,8 +142,8 @@
                         <input type="text" placeholder="Enter your Pin Code" name="pincode" required>
                     </div>
                 </div>
-                <div class="button">
-                    <input type="submit" value="Save" name="submit">
+                <div class="button" name="submit">
+                    <input type="submit" value="Save" >
                 </div>
             </form>
         </div>
