@@ -1,9 +1,9 @@
 <?php
-$con = mysqli_connect('127.0.0.1', 'root', '','cms_db');
+$con = mysqli_connect('127.0.0.1', 'root', '','db_couriers');
 if (!$con) {
     echo "Not connected To Server";
 }
-if (mysqli_select_db($con, 'cms_db')) {
+if (mysqli_select_db($con, 'db_couriers')) {
     echo 'Database not selected';
 }
 $branch_id = $_POST['branch_id'];
