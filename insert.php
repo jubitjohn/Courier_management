@@ -15,7 +15,9 @@ if(isset($_POST['submit'])){
         $contact_number =$_POST['contact_number'];
         $pincode =$_POST['pincode'];
         
-        $query="insert into branches(branch_id,branch_name,district,city,contact_number,pincode) values('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
+
+        $query="insert into branches(BranchId,BranchName,District,City,ContactNum,Pin_code) values('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
+
         $run= mysqli_query($conn,$query) ;
         if($run){
            echo "Form submitted successfully" ;
