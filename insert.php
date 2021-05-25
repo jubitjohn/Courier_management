@@ -1,24 +1,12 @@
+<?php include('db_connect.php') ?>;
 <?php
-$db_host = 'localhost';
-$db_user = 'root';
-$db_password = 'root';
-$db_db = 'db_couriers';
-$db_port = 8889;
-
-$conn = mysqli_connect(
-    $db_host,
-    $db_user,
-    $db_password,
-    $db_db
-);
-
-if ($conn->connect_error) {
-    echo 'Errno: ' . $conn->connect_errno;
-    echo '<br>';
-    echo 'Error: ' . $conn->connect_error;
-    exit();
+$con = mysqli_connect('localhost', 'root', 'root','db_couriers');
+if (!$con) {
+    echo "Not connected To Server";
 }
-
+if (mysqli_select_db($con, 'db_couriers')) {
+    echo 'Database not selected';
+}
 $branch_id = $_POST['branch_id'];
 $branch_name = $_POST['branch_name'];
 $district = $_POST['district'];
