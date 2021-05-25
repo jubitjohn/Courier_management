@@ -2,7 +2,7 @@
 $server="localhost";
 $username="root";
 $password="";
-$dbname="branches";
+$dbname="cms_db";
 
 $conn = mysqli_connect($server,$username,$password,$dbname);
 if(isset($_POST['submit'])){
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         $contact_number =$_POST['contact_number'];
         $pincode =$_POST['pincode'];
         
-        $query="insert into form(branch_id,branch_name,district,city,contact_number,pincode) values('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
+        $query="insert into branches(branch_id,branch_name,district,city,contact_number,pincode) values('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
         $run= mysqli_query($conn,$query) ;
         if($run){
            echo "Form submitted successfully" ;
