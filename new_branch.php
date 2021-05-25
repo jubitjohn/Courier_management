@@ -114,39 +114,36 @@
     <div class="container">
         <div class="title">New Branch</div>
         <div class="content">
-            <form action="#">
+            <form action="insert.php" method="POST">
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Id</span>
-                        <input type="text" placeholder="Enter your Id" required>
-                    </div>
+
                     <div class="input-box">
                         <span class="details">Branch Id</span>
-                        <input type="text" placeholder="Enter your Branch Id" required>
+                        <input type="text" placeholder="Enter your Branch Id" name ="branch_id" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Branch Name</span>
-                        <input type="text" placeholder="Enter your Branch Name" required>
+                        <input type="text" placeholder="Enter your Branch Name"  name ="branch_name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">District</span>
-                        <input type="text" placeholder="Enter your District" required>
+                        <input type="text" placeholder="Enter your District" name="district" required>
                     </div>
                     <div class="input-box">
                         <span class="details">City</span>
-                        <input type="text" placeholder="Enter your City" required>
+                        <input type="text" placeholder="Enter your City" name="city" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Contact Number</span>
-                        <input type="text" placeholder="Enter your Contact Number" required>
+                        <input type="text" placeholder="Enter your Contact Number" name = "contact_number" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Pin Code</span>
-                        <input type="text" placeholder="Enter your Pin Code" required>
+                        <input type="text" placeholder="Enter your Pin Code" name="pincode" required>
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Save">
+                    <input type="submit" value="Save" name="submit">
                 </div>
             </form>
         </div>
