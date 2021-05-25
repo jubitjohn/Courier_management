@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '','cms_db');
+$con = mysqli_connect('localhost', 'admin@admin.com', 'admin123','cms_db');
 if (!$con) {
     echo "Not connected To Server";
 }
