@@ -1,6 +1,6 @@
 
 create table branches (
-    ID          int(20) NOT NULL AUTO_INCREMENT,
+    id          int(20) NOT NULL AUTO_INCREMENT,
     BranchID        int             not null,
     BranchName      varchar(255)    not null,
     District        varchar(50)     not null,

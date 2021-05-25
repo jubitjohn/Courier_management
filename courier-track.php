@@ -35,14 +35,20 @@
             </div>
             <div class="row">
                 <h2 class="col-12 text-center card-body">
-                    <div class="card-text h4">Enter Your tracking Id :</div>
+                    <div class="card-text h4">Enter Your Tracking Id :</div>
                 </h2>
 
             </div>
             <div class="row">
-                <form action="/action_page.php" class="row">
-                    <div class=" d-flex justify-content-center"> <input class="col-4" type="text" id="trackid" name="trackid"><br><br>
+                <form action="courier-track-details.php" method="post" class="row">
+                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
+                            name="trackid">
+                        <div class="row  "> <input class="col btn btn-danger" type="submit" name="track"
+                                value="Track"><br><br>
+                        </div>
                     </div>
+                    <br><br>
+
 
 
                 </form>
