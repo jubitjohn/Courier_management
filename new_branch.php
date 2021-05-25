@@ -114,7 +114,7 @@
     <div class="container">
         <div class="title">New Branch</div>
         <div class="content">
-            <form action="insert.php" method="POST">
+            <form action="insert.php" method="post">
                 <div class="user-details">
 
                     <div class="input-box">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="button" name="submit">
-                    <input type="submit" value="Save" name="submit">
+                    <input type="submit" value="Save" >
                 </div>
             </form>
         </div>
