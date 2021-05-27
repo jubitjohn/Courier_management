@@ -10,7 +10,7 @@
 
         <div class="card">
             <div class="card-body">
-                <form action="create_p.php" id="p_manage">
+                <form action="create_p.php" id="p_manage" method="$_POST">
                     <div class="row ">
                         <div class="col-lg-6  card-body">
                             <b>Sender Information</b>
