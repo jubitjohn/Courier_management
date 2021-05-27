@@ -1,7 +1,8 @@
 <?php include('header.php') ?>;
+<?php include('sidemenu.php') ?>;
 
-
-<head><?php include('library.php') ?>;
+<head>
+    <?php include('library.php') ?>;
     <link rel="stylesheet" href="css/add_parcel.css" />
 </head>
 
