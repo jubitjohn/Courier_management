@@ -7,5 +7,5 @@
     $contact_number = $_POST['contact_number'];
     $pincode = $_POST['pincode'];
     $sql = "INSERT INTO Branches(BranchId,BranchName,District,City,ContactNum,Pin_code) VALUES('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
-    mysqli_query($con,$sql);
+    mysqli_query($conn,$sql);
 ?>
