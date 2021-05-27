@@ -8,6 +8,6 @@ include_once('db_connect.php')
     $city = $_POST['city'];
     $contact_number = $_POST['contact_number'];
     $pincode = $_POST['pincode'];
-    $sql = "INSERT INTO Branches(BranchId,BranchName,District,City,ContactNum,Pin_code) VALUES('$branch_id','$branch_name','$district','$city','$contact_number','$pincode')";
+    $sql = "INSERT INTO Branches (BranchId,BranchName,District,City,ContactNum,Pin_code) VALUES ('$branch_id','$branch_name','$district','$city','$contact_number','$pincode');";
     mysqli_query($conn,$sql);
 ?>
