@@ -1,4 +1,4 @@
-<?php include('sidemenu.php') ?>;
+<?php include_once('db_connect.php') ?>;
 <?php include('header.php') ?>;
 
 
@@ -73,8 +73,8 @@
                                 <input type="text" name="p_weight" placeholder="">
                             </div>
                             <div class=" card card-body">
-                                <label> Height</label>
-                                <input type="text" name="p_height" placeholder="">
+                                <label> Price</label>
+                                <input type="text" name="p_price" placeholder="">
                             </div>
 
 
