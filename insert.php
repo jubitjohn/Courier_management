@@ -1,5 +1,5 @@
-<?php include('db_connect.php') ?>;
 <?php
+include_once ('db_connect.php') ;
 $branch_id = $_POST['branch_id'];
 $branch_name = $_POST['branch_name'];
 $district = $_POST['district'];
