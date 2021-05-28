@@ -16,11 +16,7 @@
 
         body {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-
+        
         }
 
         .container {
@@ -28,6 +24,8 @@
             width: 100%;
             background-color: #fff;
             padding: 25px 30px;
+            margin-top: 70px;
+           
             border-radius: 5px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
