@@ -1,5 +1,6 @@
-<?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
+<?php include('header.php') ?>;
+
 
 
 
