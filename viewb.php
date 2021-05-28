@@ -5,6 +5,25 @@ include_once('db_connect.php')
 
 <head>
     <title>View</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: #588c7e;
+            font-family: monospace;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #588c7e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
 
 </head>
 
@@ -19,10 +38,10 @@ include_once('db_connect.php')
         // output data of each row
         while ($row = $result->fetch_assoc()) {
             echo "<tr><td>" . $row["BranchId"] . "</td><td>" . $row["BranchName"] . "</td><td>"
-                . $row["District"] . "</td></tr>"."<tr><td>" . $row["City"] ."<tr><td>" . $row["ContactNum"] ."<tr><td>" . $row["Pin_code"] ;
+                . $row["District"] . "</td><td>"  . $row["City"] . "</td><td>" . $row["ContactNum"] . "</td><td>" . $row["Pin_code"]. "</td></tr>";
         }
         echo "</table>";
-    } 
+    }
     $conn->close();
 
 
