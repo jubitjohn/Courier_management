@@ -1,5 +1,9 @@
 <?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b5002c11ab721819ecd18c4890e101b6a1a3e36
 
 <head>
     <?php include('library.php') ?>;
