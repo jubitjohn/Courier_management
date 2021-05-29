@@ -1,5 +1,5 @@
-<?php include('sidemenu.php') ?>;
 <?php include('header.php') ?>;
+<?php include('sidemenu.php') ?>;
 
 
 
@@ -14,7 +14,7 @@
 
         <div class="card">
             <div class="card-body">
-                <form action="create_p.php" id="p_manage" method="$_POST">
+                <form action="create_p.php" id="p_manage" method="POST">
                     <div class="row ">
                         <div class="col-lg-6  card-body">
                             <b>Sender Information</b>
@@ -96,9 +96,16 @@
                                 <input type="text" name="to_branch" placeholder="">
                             </div>
                             <br>
-                            <div class="row d-flex justify-content-center">
-                                <input class="btn btn-success col-lg-8" type="submit" name="Save" value=" Save">
+                            <div class="row d-flex ">
+
+                                <div class="col col-lg-6 ps-4"> <input class="btn btn-success col-lg-8 " type="submit"
+                                        name="Save" value=" Save">
+                                </div>
+                                <div class="col col-6">
+                                    <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
+                                </div>
                             </div>
+
 
 
 
