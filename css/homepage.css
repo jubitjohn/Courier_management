@@ -10,11 +10,11 @@
 body{
     position: relative;
     min-height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 100%;
 }
 
-.sidebar{
+/*.sidebar{
     width: 78px;
     position: fixed;
     height: 100%;
@@ -228,7 +228,7 @@ display: block;
     line-height: 50px;
     text-align: center;
 }
-
+*/
 .home_content{
     width: calc(100%-78px);
     position: absolute;
@@ -236,10 +236,10 @@ display: block;
     left: 78px;
     transition: all 0.5s ease;
 }
-.sidebar.active ~ .home_content{
+/*.sidebar.active ~ .home_content{
     width: calc(100%-270px);
     left: 270px;
-}
+}*/
 
 
 .home_content .text{
@@ -279,7 +279,7 @@ display: block;
      width: 1000px;
     /* width should be changed according to lap size*/
      
- }
+ }*/
  section.body div.cards div.row ul{
      display: flex;
      justify-content:space-between;
