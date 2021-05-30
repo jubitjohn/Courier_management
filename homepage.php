@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage|Dashboard</title>
-    <link rel="stylesheet" href="css\homepage.css">
+    <link rel="stylesheet" href="css/homepage.css" />
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
 
     <div class="home_content">
 
-    
+
 
 
         <div class="text">Welcome Home</div>
@@ -31,17 +31,17 @@
                     <ul>
                         <li>
                             <div class="left">
-                            <?php
-                           $connection = mysqli_connect("localhost","root","","cms_db");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "", "cms_db");
 
-                            $query ="SELECT id from branches ORDER BY id";
-                            $query_run = mysqli_query($connection, $query);
+                                $query = "SELECT id from branches ORDER BY id";
+                                $query_run = mysqli_query($connection, $query);
 
-                            $rows = mysqli_num_rows($query_run);
+                                $rows = mysqli_num_rows($query_run);
 
-                            echo '<h1> '.$rows.' </h1>'
-                            ?>
-                               
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+
                                 <p>Total Branches</p>
                             </div>
                             <div class="right">
@@ -51,17 +51,17 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                            $connection = mysqli_connect("localhost","root","","cms_db");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "", "cms_db");
 
-                            $query ="SELECT id from parcel  ORDER BY id";
-                            $query_run = mysqli_query($connection, $query);
+                                $query = "SELECT id from parcel  ORDER BY id";
+                                $query_run = mysqli_query($connection, $query);
 
-                            $rows = mysqli_num_rows($query_run);
+                                $rows = mysqli_num_rows($query_run);
 
-                            echo '<h1> '.$rows.' </h1>'
-                            ?>
-                                
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+
                                 <p>Total Parcels</p>
                             </div>
                             <div class="right">
@@ -70,17 +70,17 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                            $connection = mysqli_connect("localhost","root","","cms_db");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "", "cms_db");
 
-                            $query ="SELECT id from staff  ORDER BY id";
-                            $query_run = mysqli_query($connection, $query);
+                                $query = "SELECT id from staff  ORDER BY id";
+                                $query_run = mysqli_query($connection, $query);
 
-                            $rows = mysqli_num_rows($query_run);
+                                $rows = mysqli_num_rows($query_run);
 
-                            echo '<h1> '.$rows.' </h1>'
-                            ?>
-                                
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+
                                 <p>Total Staff</p>
                             </div>
                             <div class="right">
