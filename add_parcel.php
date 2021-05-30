@@ -82,10 +82,16 @@
                             <div class=" card card-body">
                                 <label> Status</label>
                                 <select name="p_status" id="status">
-                                    <option value="Parcel Received">Parcel Received</option>
-                                    <option value="In transit">In transit</option>
-                                    <option value="Parcel Out for delivery">Parcel Out for delivery</option>
-                                    <option value="Parcel Delivered">Parcel Delivered</option>
+                                    <option value="Accepted Parcel">Accepted Parcel</option>
+                                    <option value="Collected">Collected</option>
+                                    <option value="Shipped">Shipped</option>
+                                    <option value="Intransit">In-transit</option>
+                                    <option value="Arrived">Arrived</option>
+                                    <option value="Ready For Pickup">Ready For Pickup</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Picked Up">Picked Up</option>
+                                    <option value="Delivered Unsuccesful">Delivered Unsuccesful</option>
+
                                 </select>
                             </div>
 
