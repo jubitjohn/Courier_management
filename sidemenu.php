@@ -16,7 +16,7 @@
     <div class="sidebar">
         <div class="logo_content ">
             <div class="logo">
-                <i class='bx bxl-c-plus-plus'></i>
+            <i class='bx bxs-truck'></i>
                 <div class="logo-name"> ADMIN</div>
             </div>
             <i class='bx bx-menu' id="btn"></i>

@@ -1,12 +1,13 @@
 <?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
-
+<?php include('form_validation.php') ?>;
 
 
 
 <head>
     <?php include('library.php') ?>;
     <link rel="stylesheet" href="css/add_parcel.css" />
+    <script src="form_validation.js"></script>
 </head>
 
 <body class="overflow-auto">
@@ -21,7 +22,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input type="text" name="sender-name" placeholder="name">
+                                    <input  type="text" name="name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -29,7 +30,7 @@
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="sender-contact" placeholder="eg 6574637874">
+                                    <input type="text" name="sender-contact" pattern="+94[7-9]{2}-[0-9]{3}-[0-9]{4}" value="+94" placeholder="eg 6574637874">
                                 </div>
                             </div>
 
@@ -44,7 +45,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input type="text" name="receiver-name" placeholder="name">
+                                    <input  type="text" name="name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Receiver address</label>
@@ -69,15 +70,15 @@
                             <b>Parcel Information</b>
                             <div class=" card card-body">
                                 <label> reference_no</label>
-                                <input type="text" name="ref_no" placeholder=" ref no">
+                                <input type="number" name="ref_no" placeholder=" ref no">
                             </div>
                             <div class=" card card-body">
                                 <label> Weight</label>
-                                <input type="text" name="p_weight" placeholder="">
+                                <input type="number" name="p_weight" placeholder="">
                             </div>
                             <div class=" card card-body">
                                 <label> Price</label>
-                                <input type="text" name="p_price" placeholder="">
+                                <input type="number" name="p_price" placeholder="">
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
@@ -104,11 +105,11 @@
                             <b>Branch Information</b>
                             <div class=" card card-body">
                                 <label> From Branch (id)</label>
-                                <input type="text" name="frm_branch" placeholder="name">
+                                <input type="number" name="frm_branch" placeholder="name">
                             </div>
                             <div class=" card card-body">
                                 <label> To Branch (id)</label>
-                                <input type="text" name="to_branch" placeholder="">
+                                <input type="number" name="to_branch" placeholder="">
                             </div>
                             <br>
                             <div class="row d-flex ">
