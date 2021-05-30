@@ -1,6 +1,6 @@
 <?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
-
+<?php include('form_validation.php') ?>;
 
 
 
