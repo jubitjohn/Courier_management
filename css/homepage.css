@@ -311,7 +311,7 @@ display: block;
      font-size: 70px;
      transition:all ease 0.5s;
  }
- ::-webkit-scrollbar {
+ /*::-webkit-scrollbar {
      width: 5px;
    }
    
