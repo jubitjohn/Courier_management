@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<?php include('library.php') ?>;
+
+
 
 <head>
     <meta charset="UTF-8">
@@ -203,7 +204,7 @@
 
     btn.onclick = function() {
         sidebar.classList.toggle("active");
-        document.getElementById("headbar").style.marginLeft = "270px";
+       // document.getElementById("headbar").style.marginLeft = "270px";
     }
 
 
