@@ -214,6 +214,10 @@ body {
 .nav_list {
   margin: 0px;
   max-width: 0px;
+<<<<<<< HEAD
+=======
+  margin-left: 10px;
+>>>>>>> d630cf29f245a0a63304e4ca5b91a1b1468d10eb
 }
 .sidebar ul li a:hover {
   color: #11101d;
