@@ -79,6 +79,15 @@
                                 <label> Price</label>
                                 <input type="text" name="p_price" placeholder="">
                             </div>
+                            <div class=" card card-body">
+                                <label> Status</label>
+                                <select name="p_status" id="status">
+                                    <option value="Parcel Received">Parcel Received</option>
+                                    <option value="In transit">In transit</option>
+                                    <option value="Parcel Out for delivery">Parcel Out for delivery</option>
+                                    <option value="Parcel Delivered">Parcel Delivered</option>
+                                </select>
+                            </div>
 
 
 
