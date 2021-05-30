@@ -2,7 +2,7 @@
 $db_host = 'localhost';
 $db_user = 'root';
 $db_password = 'root';
-$db_db = 'db_couriers';
+$db_db = 'cms_db';
 $db_port = 8889;
 
 $conn = mysqli_connect(
@@ -18,3 +18,4 @@ if ($conn->connect_error) {
     echo 'Error: ' . $conn->connect_error;
     exit();
 }
+?>
