@@ -16,12 +16,13 @@
     nav {
         display: flex;
         height: 80px;
-        width: 100%;
+        width: 1250px;
         background: #29BB89;
         align-items: center;
         justify-content: space-between;
         padding: 0 50px 0 100px;
         flex-wrap: wrap;
+        
     }
 
     nav .heading {

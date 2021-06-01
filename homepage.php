@@ -15,7 +15,7 @@
 
     <?php include('sidemenu.php') ?>
     <?php include('header.php') ?>
-
+   
     <div class="home_content">
 
 
@@ -208,7 +208,9 @@
                 </div>
             </div>
         </section>
+       
     </div>
+   
     <script>
     let btn = document.querySelector("#btn");
     let sidebar = document.querySelector(".sidebar");
