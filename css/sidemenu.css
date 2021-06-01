@@ -10,7 +10,7 @@
 body {
   position: relative;
   min-height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
 }
 
@@ -46,10 +46,10 @@ body {
 .sidebar .logo_content .logo {
   color: #fff;
   display: flex;
-  /* height: 50%; */
+ /* height: 50%;*/
   width: 100%;
   align-items: center;
-  /* opacity: 0; */
+  opacity: 0;
   pointer-events: none;
 }
 .sidebar.active .logo_content .logo {
@@ -214,7 +214,6 @@ body {
 .nav_list {
   margin: 0px;
   max-width: 0px;
-  margin-left: 100px;
 }
 .sidebar ul li a:hover {
   color: #11101d;
@@ -231,14 +230,16 @@ body {
 
 .home_content {
   width: calc(100%-78px);
-  position: absolute;
+  position:absolute;
   height: 100%;
   left: 78px;
   transition: all 0.5s ease;
+  
 }
-.sidebar.active ~ .home_content {
-  width: calc(100%-270px);
-  left: 270px;
+.sidebar.active ~ .home_content{
+  width: calc(100% - 240px);
+  left: 280px;
+   
 }
 
 .home_content .text {

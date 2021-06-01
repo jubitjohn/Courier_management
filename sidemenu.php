@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<?php include('library.php') ?>;
+
+
 
 <head>
     <meta charset="UTF-8">
     <title>Responsive Menubar</title>
-    <link rel="stylesheet" href="css\sidemenu.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,7 @@
     <div class="sidebar">
         <div class="logo_content ">
             <div class="logo">
-                <i class='bx bxl-c-plus-plus'></i>
+            <i class='bx bxs-truck'></i>
                 <div class="logo-name"> ADMIN</div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
@@ -203,7 +204,7 @@
 
     btn.onclick = function() {
         sidebar.classList.toggle("active");
-        document.getElementById("headbar").style.marginLeft = "270px";
+       // document.getElementById("headbar").style.marginLeft = "270px";
     }
 
 

@@ -1,5 +1,3 @@
-<?php include('header.php') ?>;
-<?php include('sidemenu.php') ?>;
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -16,7 +14,11 @@
 
         body {
             height: 100vh;
-        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
         }
 
         .container {
@@ -24,8 +26,6 @@
             width: 100%;
             background-color: #fff;
             padding: 25px 30px;
-            margin-top: 70px;
-           
             border-radius: 5px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
