@@ -34,7 +34,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $qry = "SELECT * from parcel;";
+                        $qry = "SELECT * from branches;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
                             echo "Query Succesful";
