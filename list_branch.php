@@ -45,7 +45,7 @@
                         ?>
                         <tr>
                             <td class="text-center"><?php echo $i++ ?></td>
-                            <td><b><?php echo $row['BranchId'] ?></b></td>
+                            <td><b><?php echo $row['BranchID'] ?></b></td>
                             <td><b><?php echo $row['BranchName'] ?></b></td>
                             <td><b><?php echo $row['District'] ?></b></td>
                             <td><b><?php echo $row['City'] ?></b></td>
