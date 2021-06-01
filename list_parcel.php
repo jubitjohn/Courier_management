@@ -1,5 +1,5 @@
 <?php include('header.php') ?>;
-<?php include('sidemenu.php') ?>;
+
 <?php include_once('db_connect.php') ?>;
 
 <?php include('library.php') ?>;
@@ -33,8 +33,7 @@
                     </thead>
                     <tbody>
                         <?php
-
-                        $qry = "SELECT * from parcel);";
+                        $qry = "SELECT * from parcel;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
                             echo "Query Succesful";
@@ -80,6 +79,7 @@
 
 
 </div>
+<?php include('sidemenu.php') ?>;
 
 
 <style>
