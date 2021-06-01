@@ -1,7 +1,7 @@
 <?php
 $db_host = 'localhost';
 $db_user = 'root';
-$db_password = '';
+$db_password = 'root';
 $db_db = 'db_couriers';
 $db_port = 8889;
 
