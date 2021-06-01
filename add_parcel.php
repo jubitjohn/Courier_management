@@ -22,7 +22,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input  type="text" name="name" placeholder="name">
+                                    <input  type="text" name="sender-name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -45,7 +45,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input  type="text" name="name" placeholder="name">
+                                    <input  type="text" name="receiver-name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Receiver address</label>
