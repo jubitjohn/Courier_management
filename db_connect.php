@@ -18,4 +18,3 @@ if ($conn->connect_error) {
     echo 'Error: ' . $conn->connect_error;
     exit();
 }
-?>
