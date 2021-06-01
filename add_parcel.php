@@ -136,9 +136,10 @@
                     <br>
 
                 </form>
-                <?php include('sidemenu.php') ?>;
+
 
             </div>
+            <?php include('sidemenu.php') ?>;
 
         </div>
         <?php include('footer.php') ?>
