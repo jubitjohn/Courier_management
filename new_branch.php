@@ -1,3 +1,5 @@
+
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -111,6 +113,9 @@
 </head>
 
 <body>
+<?php include('sidemenu.php') ?>
+<?php include('header.php') ?>
+
     <div class="container">
         <div class="title">New Branch</div>
         <div class="content">
@@ -149,3 +154,4 @@
         </div>
     </div>
 </body>
+
