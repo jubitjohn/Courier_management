@@ -1,100 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    position: relative;
-    min-height: 100%;
-    overflow-y: scroll;
-    width: 100%;
+body {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
+  width: 100%;
 }
 
-
-.home_content{
-    width: calc(100%-78px);
-    position: absolute;
-    height: 100%;
-    left: 78px;
-    transition: all 0.5s ease;
+.home_content {
+  width: calc(100%-78px);
+  position: absolute;
+  height: 100%;
+  left: 78px;
+  transition: all 0.5s ease;
 }
 
-
-
-.home_content .text{
-    font-size: 25px;
-    font-weight: 500;
-    color: #1d1b31;
-    margin-left: 12px;
-    width: calc(100%-78px);
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+.home_content .text {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1d1b31;
+  margin-left: 12px;
+  width: calc(100%-78px);
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
 }
-.home_content  div ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+.home_content div ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
- div.home{
-    width: calc(100%-78px);
-    
+div.home {
+  width: calc(100%-78px);
 }
- div.home h1{
-    font-size: 25px;
-    font-weight: 500;
-    color: #1d1b31;
-    margin-left: 12px;
-    width: calc(100%-78px);
-    border-bottom: 1px solid blue;
-    display: none;
- }
- section.body{
-     padding-bottom: 20px;
- }
- section.body div.cards div.row{
-     padding:  5px 20px;
-     width: 1000px;
-    /* width should be changed according to lap size*/
-     
- }*/
- section.body div.cards div.row ul{
-     display: flex;
-     justify-content:space-between;
-     list-style: none;
-    
- }
- 
- section.body div.cards div.row ul li{
-     height: 155px;
-     width: 32.9%;
-     background: pink;
-     display: flex;
-     justify-content: space-between;
-     padding: 20px;
-     border-radius: 4px;
-     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
- 
- }
- section.body div.cards div.row ul li h1{
-     font-size: 50px;
-     padding-bottom: 15px;
- }
- section.body div.cards div.row ul li i{
-    font-size: 50px;
-    color: grey;
- }
+div.home h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1d1b31;
+  margin-left: 12px;
+  width: calc(100%-78px);
+  border-bottom: 1px solid blue;
+  display: none;
+}
+section.body {
+  padding-bottom: 20px;
+}
+section.body div.cards div.row {
+  padding: 5px 20px;
+  width: 1000px;
+  /* width should be changed according to lap size*/
+}
+*/ section.body div.cards div.row ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
 
- section.body div.cards div.row ul li i:hover{
-     font-size: 70px;
-     transition:all ease 0.5s;
- }
- /*::-webkit-scrollbar {
+section.body div.cards div.row ul li {
+  height: 155px;
+  width: 32.9%;
+  background: pink;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+section.body div.cards div.row ul li h1 {
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+section.body div.cards div.row ul li i {
+  font-size: 50px;
+  color: grey;
+}
+
+section.body div.cards div.row ul li i:hover {
+  font-size: 70px;
+  transition: all ease 0.5s;
+}
+/*::-webkit-scrollbar {
      width: 5px;
    }
    

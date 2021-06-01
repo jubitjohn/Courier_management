@@ -214,8 +214,6 @@ body {
 .nav_list {
   margin: 0px;
   max-width: 0px;
-  
-
 }
 .sidebar ul li a:hover {
   color: #11101d;
@@ -237,7 +235,7 @@ body {
   left: 78px;
   transition: all 0.5s ease;
 }
-.sidebar.active ~ .home_content {
+.sidebar.active .home_content {
   width: calc(100%-270px);
   left: 270px;
 }
