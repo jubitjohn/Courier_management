@@ -1,5 +1,5 @@
 <?php include('header.php') ?>;
-<?php include('sidemenu.php') ?>;
+
 
 
 
@@ -12,10 +12,14 @@
 </head>
 
 <body class="overflow-auto">
+
     <div class="n_parcel">
 
+
         <div class="card ">
+
             <div class="card-body">
+
                 <form action="create_p.php" id="p_manage" method="POST">
                     <div class="row ">
                         <div class="col-lg-6  card-body">
@@ -132,6 +136,7 @@
                     <br>
 
                 </form>
+                <?php include('sidemenu.php') ?>;
 
             </div>
 
