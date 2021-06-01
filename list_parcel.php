@@ -33,6 +33,8 @@
                     </thead>
                     <tbody>
                         <?php
+                        $i = 1;
+
                         $qry = "SELECT * from parcel;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
