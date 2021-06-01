@@ -29,6 +29,7 @@
                             <th>City</th>
                             <th>Contact Number</th>
                             <th>Pincode</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,12 +52,7 @@
                                 <td><b><?php echo $row['City'] ?></b></td>
                                 <td><b><?php echo $row['ContactNum'] ?></b></td>
                                 <td><b><?php echo $row['Pin_code'] ?></b></td>
-                                <td class="text-center">
-                                    <?php
-                                    echo $row['p_status']
 
-                                    ?>
-                                </td>
                                 <td class="text-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-info btn-flat view_parcel" data-id="<?php echo $row['id'] ?>">
