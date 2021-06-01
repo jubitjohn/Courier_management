@@ -10,7 +10,7 @@
 body {
   position: relative;
   min-height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
 }
 
@@ -46,7 +46,7 @@ body {
 .sidebar .logo_content .logo {
   color: #fff;
   display: flex;
-  height: 50%;
+ /* height: 50%;*/
   width: 100%;
   align-items: center;
   opacity: 0;
@@ -230,14 +230,16 @@ body {
 
 .home_content {
   width: calc(100%-78px);
-  position: absolute;
+  position:absolute;
   height: 100%;
   left: 78px;
   transition: all 0.5s ease;
+  
 }
-.sidebar.active .home_content {
-  width: calc(100%-270px);
-  left: 270px;
+.sidebar.active ~ .home_content{
+  width: calc(100% - 240px);
+  left: 280px;
+   
 }
 
 .home_content .text {
