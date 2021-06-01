@@ -1,5 +1,7 @@
 <?php include('header.php') ?>;
-<?php include('sidemenu.php') ?>;
+
+<?php include_once('db_connect.php') ?>;
+
 <?php include('library.php') ?>;
 <div class="container">
     <div class="col-lg-12">
@@ -31,62 +33,23 @@
                     </thead>
                     <tbody>
                         <?php
-                        $i = 1;
-                        $where = "";
-                        if (isset($_GET['s'])) {
-                            $where = " where status = {$_GET['s']} ";
+                        $qry = "SELECT * from parcel;";
+                        $result = mysqli_query($conn, $qry);
+                        if ($result) {
+                            echo "Query Succesful";
+                        } else {
+                            echo "Query Corrupt";
                         }
-                        if ($_SESSION['login_type'] != 1) {
-                            if (empty($where))
-                                $where = " where ";
-                            else
-                                $where .= " and ";
-                            $where .= " (from_branch_id = {$_SESSION['login_branch_id']} or to_branch_id = {$_SESSION['login_branch_id']}) ";
-                        }
-                        $qry = $conn->query("SELECT * from parcels $where order by  unix_timestamp(date_created) desc ");
-                        while ($row = $qry->fetch_assoc()) :
+                        while ($row = mysqli_fetch_assoc($result)) :
                         ?>
                         <tr>
                             <td class="text-center"><?php echo $i++ ?></td>
-                            <td><b><?php echo ($row['reference_number']) ?></b></td>
-                            <td><b><?php echo ucwords($row['sender_name']) ?></b></td>
-                            <td><b><?php echo ucwords($row['recipient_name']) ?></b></td>
+                            <td><b><?php echo $row['reference_no'] ?></b></td>
+                            <td><b><?php echo $row['sender_name'] ?></b></td>
+                            <td><b><?php echo $row['recipient_name'] ?></b></td>
                             <td class="text-center">
                                 <?php
-                                    switch ($row['status']) {
-                                        case '1':
-                                            echo "<span class='badge badge-pill badge-info'> Collected</span>";
-                                            break;
-                                        case '2':
-                                            echo "<span class='badge badge-pill badge-info'> Shipped</span>";
-                                            break;
-                                        case '3':
-                                            echo "<span class='badge badge-pill badge-primary'> In-Transit</span>";
-                                            break;
-                                        case '4':
-                                            echo "<span class='badge badge-pill badge-primary'> Arrived At Destination</span>";
-                                            break;
-                                        case '5':
-                                            echo "<span class='badge badge-pill badge-primary'> Out for Delivery</span>";
-                                            break;
-                                        case '6':
-                                            echo "<span class='badge badge-pill badge-primary'> Ready to Pickup</span>";
-                                            break;
-                                        case '7':
-                                            echo "<span class='badge badge-pill badge-success'>Delivered</span>";
-                                            break;
-                                        case '8':
-                                            echo "<span class='badge badge-pill badge-success'> Picked-up</span>";
-                                            break;
-                                        case '9':
-                                            echo "<span class='badge badge-pill badge-danger'> Unsuccessfull Delivery Attempt</span>";
-                                            break;
-
-                                        default:
-                                            echo "<span class='badge badge-pill badge-info'> Item Accepted by Courier</span>";
-
-                                            break;
-                                    }
+                                    echo $row['p_status']
 
                                     ?>
                             </td>
@@ -113,7 +76,11 @@
             </div>
         </div>
     </div>
+
+
 </div>
+<?php include('sidemenu.php') ?>;
+
 
 <style>
 table td {
