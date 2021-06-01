@@ -24,7 +24,7 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
 
-<body class="overflow-auto">
+<body class="overflow-auto container">
 
     <div class="n_parcel">
 

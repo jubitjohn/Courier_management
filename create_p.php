@@ -18,11 +18,21 @@ $p_status = $_POST['p_status'];
 $sql = "INSERT INTO
 parcel (reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_price,p_status)
 VALUES (' $p_ref',' $s_name','$s_ad','$s_contact','$r_name','$r_ad',' $r_contact',' $p_frm_b','$p_to_b','$p_weight','$p_price','$p_status');";
+$sql1 = "INSERT INTO
+parcel_tracks (parcel_id,parcel_status)
+VALUES (' $p_ref','$p_status');";
+
 
 $result = mysqli_query($conn, $sql);
+$result1 = mysqli_query($conn, $sql1);
 if ($result) {
     echo "data added";
 } else {
     echo "error data not added";
+}
+if ($result1) {
+    echo "data1 added";
+} else {
+    echo "error data1 not added";
 }
 ?>

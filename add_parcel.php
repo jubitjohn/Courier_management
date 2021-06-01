@@ -1,13 +1,9 @@
 <?php include('header.php') ?>;
-
-<head>
-    <?php include('library.php') ?>;
-    <link rel="stylesheet" href="css/add_parcel.css" />
-
-</head>
+<?php include('library.php') ?>;
 
 
-<body class="overflow-auto">
+
+<body class="overflow-auto container">
 
     <div class="n_parcel">
 
@@ -136,10 +132,11 @@
             </div>
             <?php include('sidemenu.php') ?>;
 
-        </div>
-        <?php include('footer.php') ?>
 
+        </div>
+        <?php include('footer.php') ?>;
     </div>
+
 
 
 </body>

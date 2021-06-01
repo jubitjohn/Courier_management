@@ -136,7 +136,7 @@
                                 <?php
                                 $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped'";
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped';";
                                 $query_run = mysqli_query($connection, $query);
 
                                 $rows = mysqli_num_rows($query_run);
@@ -199,7 +199,7 @@
                                 <?php
                                 $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery'";
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery';";
                                 $query_run = mysqli_query($connection, $query);
 
                                 $rows = mysqli_num_rows($query_run);
