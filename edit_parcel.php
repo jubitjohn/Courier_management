@@ -33,7 +33,7 @@ $row = mysqli_fetch_assoc($result);
 
             <div class="card-body">
 
-                <form action="create_p.php" id="p_manage" method="POST">
+                <form action="p_update.php?id=<?php echo $row['id'] ?>" id="p_manage" method="POST">
                     <div class="row ">
                         <div class="col-lg-6  card-body">
                             <b>Sender Information</b>
@@ -93,28 +93,49 @@ $row = mysqli_fetch_assoc($result);
                             <b>Parcel Information</b>
                             <div class=" card card-body">
                                 <label> reference_no</label>
-                                <input type="number" name="ref_no" placeholder="">
+                                <input type="number" name="ref_no" placeholder=""
+                                    value="<?php echo $row['reference_no'] ?>">
                             </div>
                             <div class=" card card-body">
                                 <label> Weight</label>
-                                <input type="text" name="p_weight" placeholder="">
+                                <input type="text" name="p_weight" placeholder=""
+                                    value="<?php echo $row['p_weight'] ?>">
                             </div>
                             <div class=" card card-body">
                                 <label> Price</label>
-                                <input type="text" name="p_price" placeholder="">
+                                <input type="text" name="p_price" placeholder="" value="<?php echo $row['p_price'] ?>">
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
-                                <select name="p_status" id="status">
-                                    <option value="Accepted Parcel">Accepted Parcel</option>
-                                    <option value="Collected">Collected</option>
-                                    <option value="Shipped">Shipped</option>
-                                    <option value="Intransit">In-transit</option>
-                                    <option value="Arrived">Arrived</option>
-                                    <option value="Ready For Pickup">Ready For Pickup</option>
-                                    <option value="Delivered">Delivered</option>
-                                    <option value="Picked Up">Picked Up</option>
-                                    <option value="Delivered Unsuccesful">Delivered Unsuccesful</option>
+                                <select name="p_status" id="status" value="<?php echo $row['p_status'] ?>">
+                                    <option value="Accepted Parcel"
+                                        <?php if ($row['p_status'] == 'Accepted') echo ' selected="selected"'; ?>>
+                                        Accepted
+                                        Parcel</option>
+                                    <option value="Collected"
+                                        <?php if ($row['p_status'] == 'Collected') echo ' selected="selected"'; ?>>
+                                        Collected</option>
+                                    <option value="Shipped"
+                                        <?php if ($row['p_status'] == 'Shipped') echo ' selected="selected"'; ?>>Shipped
+                                    </option>
+                                    <option value="Intransit"
+                                        <?php if ($row['p_status'] == 'In-transit') echo ' selected="selected"'; ?>>
+                                        In-transit</option>
+                                    <option value="Arrived"
+                                        <?php if ($row['p_status'] == 'Arrived') echo ' selected="selected"'; ?>>Arrived
+                                    </option>
+                                    <option value="Ready For Pickup"
+                                        <?php if ($row['p_status'] == 'Ready For Pickup') echo ' selected="selected"'; ?>>
+                                        Ready For Pickup</option>
+                                    <option value="Delivered"
+                                        <?php if ($row['p_status'] == 'Delivered') echo ' selected="selected"'; ?>>
+                                        Delivered</option>
+                                    <option value="Picked Up"
+                                        <?php if ($row['p_status'] == 'Picked Up') echo ' selected="selected"'; ?>>
+                                        Picked Up</option>
+                                    <option value="Delivered Unsuccesful"
+                                        <?php if ($row['Delivered Unsuccesful'] == 'Accepted') echo ' selected="selected"'; ?>>
+                                        Delivered Unsuccesful</option>
 
                                 </select>
                             </div>
@@ -128,21 +149,21 @@ $row = mysqli_fetch_assoc($result);
                             <b>Branch Information</b>
                             <div class=" card card-body">
                                 <label> From Branch (id)</label>
-                                <input type="text" name="frm_branch" placeholder="">
+                                <input type="text" name="frm_branch" placeholder=""
+                                    value="<?php echo $row['from_branch_id'] ?>">
                             </div>
                             <div class=" card card-body">
                                 <label> To Branch (id)</label>
-                                <input type="text" name="to_branch" placeholder="">
+                                <input type="text" name="to_branch" placeholder=""
+                                    value="<?php echo $row['to_branch_id'] ?>">
                             </div>
                             <br>
                             <div class="row d-flex ">
 
                                 <div class="col col-lg-6 ps-4"> <input class="btn btn-success col-lg-8 " type="submit"
-                                        name="Save" value=" Save">
+                                        name="Save" value=" Update">
                                 </div>
-                                <div class="col col-6">
-                                    <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
-                                </div>
+
                             </div>
 
 
