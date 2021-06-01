@@ -61,10 +61,11 @@
     </div>
 
     <footer class="fixed-bottom">
-        <div class="text-center p-4">&copy courier management systems <?php echo date('Y'); ?>
-        </div>
+
+        <?php include('footer.php') ?>
     </footer>
 
 </body>
+
 
 </html>
