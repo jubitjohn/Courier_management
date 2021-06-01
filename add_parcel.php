@@ -14,7 +14,7 @@
 <body class="overflow-auto">
     <div class="n_parcel">
 
-        <div class="card">
+        <div class="card ">
             <div class="card-body">
                 <form action="create_p.php" id="p_manage" method="POST">
                     <div class="row ">
@@ -134,7 +134,11 @@
                 </form>
 
             </div>
+
         </div>
+        <?php include('footer.php') ?>
 
     </div>
+
+
 </body>
