@@ -23,6 +23,6 @@ $result = mysqli_query($conn, $sql);
 if ($result) {
     echo "data added";
 } else {
-    echo "error";
+    echo "error data not added";
 }
 ?>
