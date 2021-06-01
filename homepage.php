@@ -15,7 +15,7 @@
 
     <?php include('sidemenu.php') ?>
     <?php include('header.php') ?>
-   
+
     <div class="home_content">
 
 
@@ -33,7 +33,7 @@
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT id from branches ORDER BY id";
                                 $query_run = mysqli_query($connection, $query);
@@ -53,7 +53,7 @@
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT id from parcel  ORDER BY id";
                                 $query_run = mysqli_query($connection, $query);
@@ -72,7 +72,7 @@
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT id from staff  ORDER BY id";
                                 $query_run = mysqli_query($connection, $query);
@@ -95,8 +95,8 @@
                     <ul>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Item accepted by courier'";
                                 $query_run = mysqli_query($connection, $query);
@@ -105,7 +105,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>Item accepted by courier</p>
                             </div>
                             <div class="right">
@@ -115,8 +115,8 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Collected'";
                                 $query_run = mysqli_query($connection, $query);
@@ -133,8 +133,8 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped'";
                                 $query_run = mysqli_query($connection, $query);
@@ -143,7 +143,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>Shipped</p>
                             </div>
                             <div class="right">
@@ -157,8 +157,8 @@
                     <ul>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'In-transit'";
                                 $query_run = mysqli_query($connection, $query);
@@ -167,7 +167,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>In-transit</p>
                             </div>
                             <div class="right">
@@ -177,8 +177,8 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Arrived at destination'";
                                 $query_run = mysqli_query($connection, $query);
@@ -187,7 +187,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>Arrived at destination</p>
                             </div>
                             <div class="right">
@@ -196,8 +196,8 @@
                         </li>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery'";
                                 $query_run = mysqli_query($connection, $query);
@@ -206,7 +206,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                                
+
                                 <p>Out for delivery</p>
                             </div>
                             <div class="right">
@@ -219,8 +219,8 @@
                     <ul>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready to deliver'";
                                 $query_run = mysqli_query($connection, $query);
@@ -229,7 +229,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>Ready to deliver</p>
                             </div>
                             <div class="right">
@@ -240,8 +240,8 @@
 
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Order Delivered'";
                                 $query_run = mysqli_query($connection, $query);
@@ -250,7 +250,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p> Delivered</p>
                             </div>
                             <div class="right">
@@ -261,8 +261,8 @@
 
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked-up'";
                                 $query_run = mysqli_query($connection, $query);
@@ -271,7 +271,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                            
+
                                 <p>Picked-up</p>
                             </div>
                             <div class="right">
@@ -285,8 +285,8 @@
                     <ul>
                         <li>
                             <div class="left">
-                            <?php
-                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+                                <?php
+                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                 $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Unsuccessful delivery attempt'";
                                 $query_run = mysqli_query($connection, $query);
@@ -295,7 +295,7 @@
 
                                 echo '<h1> ' . $rows . ' </h1>'
                                 ?>
-                               
+
                                 <p>Unsuccessful delivery attempt</p>
                             </div>
                             <div class="right">
@@ -307,9 +307,9 @@
                 </div>
             </div>
         </section>
-       
+
     </div>
-   
+
     <script>
     let btn = document.querySelector("#btn");
     let sidebar = document.querySelector(".sidebar");
