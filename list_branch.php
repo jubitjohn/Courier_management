@@ -44,7 +44,7 @@
                         while ($row = mysqli_fetch_assoc($result)) :
                         ?>
                         <tr>
-                            <td class="text-center"><?php echo $i++ ?></td>
+                            <td class="text-center"><?php echo $id++ ?></td>
                             <td><b><?php echo $row['BranchID'] ?></b></td>
                             <td><b><?php echo $row['BranchName'] ?></b></td>
                             <td><b><?php echo $row['District'] ?></b></td>
