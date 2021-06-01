@@ -95,7 +95,17 @@
                     <ul>
                         <li>
                             <div class="left">
-                                <h1>1</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Item accepted by courier'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>Item accepted by courier</p>
                             </div>
                             <div class="right">
@@ -105,7 +115,16 @@
                         </li>
                         <li>
                             <div class="left">
-                                <h1>5</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Collected'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
                                 <p>Collected</p>
                             </div>
                             <div class="right">
@@ -114,7 +133,17 @@
                         </li>
                         <li>
                             <div class="left">
-                                <h1>0</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>Shipped</p>
                             </div>
                             <div class="right">
@@ -128,7 +157,17 @@
                     <ul>
                         <li>
                             <div class="left">
-                                <h1>5</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'In-transit'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>In-transit</p>
                             </div>
                             <div class="right">
@@ -138,7 +177,17 @@
                         </li>
                         <li>
                             <div class="left">
-                                <h1>2</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Arrived at destination'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>Arrived at destination</p>
                             </div>
                             <div class="right">
@@ -147,7 +196,17 @@
                         </li>
                         <li>
                             <div class="left">
-                                <h1>12</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                                
                                 <p>Out for delivery</p>
                             </div>
                             <div class="right">
@@ -160,7 +219,17 @@
                     <ul>
                         <li>
                             <div class="left">
-                                <h1>8</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready to deliver'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>Ready to deliver</p>
                             </div>
                             <div class="right">
@@ -171,8 +240,18 @@
 
                         <li>
                             <div class="left">
-                                <h1>6</h1>
-                                <p>Delivered</p>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Order Delivered'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
+                                <p> Delivered</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-like'></i>
@@ -182,7 +261,17 @@
 
                         <li>
                             <div class="left">
-                                <h1>2</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked-up'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                            
                                 <p>Picked-up</p>
                             </div>
                             <div class="right">
@@ -196,7 +285,17 @@
                     <ul>
                         <li>
                             <div class="left">
-                                <h1>4</h1>
+                            <?php
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
+
+                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Unsuccessful delivery attempt'";
+                                $query_run = mysqli_query($connection, $query);
+
+                                $rows = mysqli_num_rows($query_run);
+
+                                echo '<h1> ' . $rows . ' </h1>'
+                                ?>
+                               
                                 <p>Unsuccessful delivery attempt</p>
                             </div>
                             <div class="right">
