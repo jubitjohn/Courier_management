@@ -1,5 +1,7 @@
 <?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
+<?php include_once('db_connect.php') ?>;
+
 <?php include('library.php') ?>;
 <div class="container">
     <div class="col-lg-12">
@@ -113,7 +115,10 @@
             </div>
         </div>
     </div>
+
+
 </div>
+
 
 <style>
 table td {
