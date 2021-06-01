@@ -7,7 +7,7 @@
 <head>
     <?php include('library.php') ?>;
     <link rel="stylesheet" href="css/add_parcel.css" />
-    <script src="form_validation.js"></script>
+    
 </head>
 
 <body class="overflow-auto">
