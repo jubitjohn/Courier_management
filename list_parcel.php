@@ -61,7 +61,7 @@
                                         data-id="<?php echo $row['id'] ?>">
                                         <i class="fas fa-eye"></i>
                                     </button>
-                                    <a href="index.php?page=edit_parcel&id=<?php echo $row['id'] ?>"
+                                    <a href="edit_parcel.php?id=<?php echo $row['id'] ?>"
                                         class="btn btn-primary btn-flat ">
                                         <i class="fas fa-edit"></i>
                                     </a>

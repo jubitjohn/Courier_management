@@ -1,4 +1,5 @@
 <?php include('header.php') ?>;
+<?php include_once('db_connect.php') ?>;
 
 <head>
     <?php include('library.php') ?>;
@@ -7,7 +8,19 @@
 </head>
 <?php
 
+$id = $_GET['id'];
 
+?>
+<?php
+
+$qry = "SELECT * from parcel where id = $id;";
+$result = mysqli_query($conn, $qry);
+if ($result) {
+    echo "Query Succesful";
+} else {
+    echo "Query Corrupt";
+}
+$row = mysqli_fetch_assoc($result);
 ?>
 
 
@@ -27,15 +40,17 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input type="text" name="sender-name" placeholder="name">
+                                    <input type="text" name="sender-name" placeholder="name"
+                                        value="<?php echo $row['sender_name'] ?>">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
-                                    <input type="text" name="sender-ad">
+                                    <input type="text" name="sender-ad" value="<?php echo $row['sender_address'] ?>">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="sender-contact">
+                                    <input type="text" name="sender-contact"
+                                        value="<?php echo $row['sender_contact'] ?>">
                                 </div>
                             </div>
 
@@ -50,15 +65,18 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input type="text" name="receiver-name" placeholder="">
+                                    <input type="text" name="receiver-name" placeholder=""
+                                        value="<?php echo $row['recipient_name'] ?>">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Receiver address</label>
-                                    <input type="text" name="receiver-ad" placeholder="">
+                                    <input type="text" name="receiver-ad" placeholder=""
+                                        value="<?php echo $row['recipient_address'] ?>">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="receiver-contact" placeholder="">
+                                    <input type="text" name="receiver-contact" placeholder=""
+                                        value="<?php echo $row['recipient_contact'] ?>">
                                 </div>
                             </div>
 
