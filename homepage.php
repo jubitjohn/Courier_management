@@ -53,7 +53,7 @@
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "", "cms_db");
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
 
                                 $query = "SELECT id from parcel  ORDER BY id";
                                 $query_run = mysqli_query($connection, $query);
@@ -72,7 +72,7 @@
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "", "cms_db");
+                                $connection = mysqli_connect("localhost", "root", "", "db_couriers");
 
                                 $query = "SELECT id from staff  ORDER BY id";
                                 $query_run = mysqli_query($connection, $query);
