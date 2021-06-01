@@ -1,13 +1,14 @@
 <?php include('header.php') ?>;
 <?php include('sidemenu.php') ?>;
-<?php include('form_validation.php') ?>;
+
+
 
 
 
 <head>
     <?php include('library.php') ?>;
     <link rel="stylesheet" href="css/add_parcel.css" />
-    
+
 </head>
 
 <body class="overflow-auto">
@@ -22,7 +23,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input  type="text" name="sender-name" placeholder="name">
+                                    <input type="text" name="sender-name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -30,7 +31,8 @@
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="sender-contact" pattern="+94[7-9]{2}-[0-9]{3}-[0-9]{4}" value="+94" placeholder="eg 6574637874">
+                                    <input type="text" name="sender-contact" pattern="+94[7-9]{2}-[0-9]{3}-[0-9]{4}"
+                                        value="+94" placeholder="eg 6574637874">
                                 </div>
                             </div>
 
@@ -45,7 +47,7 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input  type="text" name="receiver-name" placeholder="name">
+                                    <input type="text" name="receiver-name" placeholder="name">
                                 </div>
                                 <div class=" card card-body">
                                     <label> Receiver address</label>
