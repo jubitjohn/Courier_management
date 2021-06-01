@@ -14,18 +14,18 @@
 
         body {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
+
+            
 
         }
 
         .container {
-            max-width: 700px;
+            max-width: 1000px;
             width: 100%;
             background-color: #fff;
             padding: 25px 30px;
+            margin-left: 300px;
+            margin-top: 80px;
             border-radius: 5px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
@@ -111,6 +111,12 @@
 </head>
 
 <body>
+    <?php include('header.php') ?>
+    <?php include('sidemenu.php') ?>
+
+
+
+
     <div class="container">
         <div class="title">New Branch</div>
         <div class="content">
@@ -119,11 +125,11 @@
 
                     <div class="input-box">
                         <span class="details">Branch Id</span>
-                        <input type="text" placeholder="Enter your Branch Id" name ="branch_id" required>
+                        <input type="text" placeholder="Enter your Branch Id" name="branch_id" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Branch Name</span>
-                        <input type="text" placeholder="Enter your Branch Name"  name ="branch_name" required>
+                        <input type="text" placeholder="Enter your Branch Name" name="branch_name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">District</span>
@@ -135,7 +141,7 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Contact Number</span>
-                        <input type="text" placeholder="Enter your Contact Number" name = "contact_number" required>
+                        <input type="text" placeholder="Enter your Contact Number" name="contact_number" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Pin Code</span>
@@ -143,7 +149,7 @@
                     </div>
                 </div>
                 <div class="button" name="submit">
-                    <input type="submit" value="Save" >
+                    <input type="submit" value="Save">
                 </div>
             </form>
         </div>
