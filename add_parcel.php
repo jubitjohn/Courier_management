@@ -1,5 +1,5 @@
-<?php include('header.php') ?>;
-<?php include('library.php') ?>;
+<?php include('header.php') ?>
+<?php include('library.php') ?>
 
 
 
@@ -88,7 +88,7 @@
                                     <option value="Ready For Pickup">Ready For Pickup</option>
                                     <option value="Delivered">Delivered</option>
                                     <option value="Picked Up">Picked Up</option>
-                                    <option value="Delivered Unsuccesful">Delivered Unsuccesful</option>
+                                    <option value="Delivered Unsuccesful">Delivery Unsuccessful</option>
 
                                 </select>
                             </div>
@@ -130,11 +130,11 @@
 
 
             </div>
-            <?php include('sidemenu.php') ?>;
+            <?php include('sidemenu.php') ?>
 
 
         </div>
-        <?php include('footer.php') ?>;
+        <?php include('footer.php') ?>
     </div>
 
 
