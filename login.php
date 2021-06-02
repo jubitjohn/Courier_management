@@ -25,10 +25,10 @@ if (isset($_POST['email']) && isset($_POST['pass'])){
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result)===1){
             $row=mysqli_fetch_assoc($result);
-            if($row['username']===$email && $row['pass']===$pass){
-                $SESSION['username']=$row['username'];
-                $SESSION['id']=$row['id'];
-                header("Location: sidemenu.php");
+            if($row['username'] === $email && $row['pass']===$pass) {
+                $_SESSION['username']=$row['username'];
+                $_SESSION['id']=$row['id'];
+                header("Location: homepage.php");
                 exit();
             }
             else{

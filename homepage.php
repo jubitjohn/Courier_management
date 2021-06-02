@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -327,3 +333,10 @@
 </body>
 
 </html>
+
+<?php
+}else{
+    header("Location: Logint.php");
+    exit();
+}
+?>
