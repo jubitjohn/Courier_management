@@ -3,7 +3,27 @@
 <?php include_once('db_connect.php') ?>;
 
 <?php include('library.php') ?>;
+<?php
+$status = $_GET['id'];
+?>
 <div class="container">
+    <div class="alert-success card-body">
+        <?php
+        if ($status == 11) {
+            echo "Courier Deleted Successfully";
+        } else if ($status == 12) {
+            echo "Deletion Failed try again";
+        } else if ($status == 21) {
+            echo "Updation Successful";
+        } else if ($status == 22) {
+            echo "Updation Failed";
+        } else if ($status == 31) {
+            echo "Courier Added";
+        } else if ($status == 32) {
+            echo "Could'nt add Courier,Try again";
+        }
+
+        ?></div>
     <div class="col-lg-12">
         <div class="card card-outline card-primary">
             <div class="card-header">
@@ -61,7 +81,7 @@
                                         <a href="edit_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <a href="delete_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-danger btn-flat ">
+                                        <a href="delete_com.php?id=<?php echo $row['id'] ?>" class="btn btn-danger btn-flat ">
                                             <i class="fas fa-trash"></i>
                                         </a>
 
