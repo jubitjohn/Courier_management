@@ -38,7 +38,7 @@
                         $qry = "SELECT * from branches;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
-                            echo "Query Succesful";
+                            echo " ";
                         } else {
                             echo "Query Corrupt";
                         }
@@ -61,9 +61,10 @@
                                         <a href="edit_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <button type="button" class="btn btn-danger btn-flat delete_parcel" data-id="<?php echo $row['id'] ?>">
+                                        <a href="delete_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-danger btn-flat ">
                                             <i class="fas fa-trash"></i>
-                                        </button>
+                                        </a>
+
                                     </div>
                                 </td>
                             </tr>
