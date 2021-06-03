@@ -24,9 +24,6 @@
                                     <input type="text" id="sender_name" name="sender-name" placeholder="name">
                                    
 
-                                    <input type="text" name="sender-name" placeholder="name">
-
-
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
