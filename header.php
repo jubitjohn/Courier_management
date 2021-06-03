@@ -10,7 +10,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
     }
 
     nav {
@@ -27,8 +26,10 @@
 
     nav .heading {
         color: #fff;
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 45px;
+        font-weight: 800;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     }
 
     nav ul {
@@ -65,7 +66,7 @@
 <body>
     <div id="headbar">
         <nav>
-            <div class="heading">Courier management service</div>
+            <div class="heading">Courier Management Systems</div>
             <ul>
                 <li><a class="active" href="logout.php">Logout</a></li>
             </ul>
