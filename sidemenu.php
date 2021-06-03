@@ -34,7 +34,7 @@
 
                 <li>
 
-                    <a href="#">
+                    <a href="new_branch.php">
                         <i class='bx bx-plus'></i>
                         <span class="link_names"> ADD BRANCH </span>
                     </a>
@@ -45,7 +45,7 @@
 
                 <li>
 
-                    <a href="#">
+                    <a href="list_branch.php">
                         <i class='bx bx-git-branch'></i>
                         <span class="link_names">BRANCH LIST</span>
                     </a>

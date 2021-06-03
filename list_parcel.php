@@ -33,6 +33,8 @@
                     </thead>
                     <tbody>
                         <?php
+                        $i = 1;
+
                         $qry = "SELECT * from parcel;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
@@ -55,11 +57,14 @@
                             </td>
                             <td class="text-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-info btn-flat view_parcel"
-                                        data-id="<?php echo $row['id'] ?>">
-                                        <i class="fas fa-eye"></i>
+                                    <button type="button">
+                                        <a href="view_p.php?id=<?php echo $row['id'] ?>"
+                                            class="btn btn-success btn-flat ">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+
                                     </button>
-                                    <a href="index.php?page=edit_parcel&id=<?php echo $row['id'] ?>"
+                                    <a href="edit_parcel.php?id=<?php echo $row['id'] ?>"
                                         class="btn btn-primary btn-flat ">
                                         <i class="fas fa-edit"></i>
                                     </a>
@@ -90,9 +95,6 @@ table td {
 <script>
 $(document).ready(function() {
     $('#list').dataTable()
-    $('.view_parcel').click(function() {
-        uni_modal("Parcel's Details", "view_parcel.php?id=" + $(this).attr('data-id'), "large")
-    })
     $('.delete_parcel').click(function() {
         _conf("Are you sure to delete this parcel?", "delete_parcel", [$(this).attr('data-id')])
     })
@@ -108,7 +110,7 @@ function delete_parcel($id) {
         },
         success: function(resp) {
             if (resp == 1) {
-                alert_toast("Data successfully deleted", 'success')
+                alert_toast("Data succsessfully deleted", 'success')
                 setTimeout(function() {
                     location.reload()
                 }, 1500)
