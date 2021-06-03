@@ -119,7 +119,7 @@ $id = $_GET['id'];
 $qry = "SELECT * from branches where id = $id;";
 $result = mysqli_query($conn, $qry);
 if ($result) {
-    echo "Query Succesful";
+    echo "";
 } else {
     echo "Query Corrupt";
 }
@@ -127,7 +127,7 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
 <body>
-    <?php include('header.php') ?>
+    
     <?php include('sidemenu.php') ?>
 
 
@@ -170,4 +170,5 @@ $row = mysqli_fetch_assoc($result);
             </form>
         </div>
     </div>
+    <?php include('sidemenu.php') ?>
 </body>
