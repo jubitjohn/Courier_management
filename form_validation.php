@@ -1,5 +1,53 @@
+<?php
+
+ <script type="text/javascript">
+const form = document.querySelector("form");
+const passwordInput = document.querySelector("#password");
+const usernameInput = document.querySelector("#username");
+const errorMessage = document.querySelector("#error");
+
+passwordInput.addEventListener("input", (evt) => {
+  if(passwordInput.value.length < 8)
+    passwordInput.classList.add("error");
+  else
+  {
+    passwordInput.classList.add("success");
+    passwordInput.classList.remove("error");
+  }
+});
 
 
+
+form.addEventListener("submit", (evt) => {
+  const password = evt.target.elements.password.value;
+  if(password.length < 9)
+  {
+    errorMessage.innerText = "Password must be more than 8 characters"
+    evt.preventDefault();
+  }
+});
+</script>
+
+?>
+<style>
+.errorMess{
+  color: red;
+}
+
+.success{
+  border: 2px solid green;
+}
+
+
+.error{
+  border: 2px solid red;
+}
+
+
+input{
+  outline: none;
+}
+</style>
 <?php
 $error="";
 if(isset($_POST['Save'])) {
