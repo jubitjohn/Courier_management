@@ -76,7 +76,7 @@
 
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="add_parcel.php">
                         <i class='bx bx-book-add'></i>
                         <span class="link_names">ADD PARCEL</span>
 
@@ -86,7 +86,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="list_parcel.php">
                         <i class='bx bx-list-ul'></i>
                         <span class="link_names"> LIST PARCELS</span>
 
@@ -94,7 +94,7 @@
                     <span class="tooltip"> List Parcels</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-message-square-check'></i>
                         <span class="link_names"> ACCEPTED PARCELS</span>
 
@@ -102,7 +102,7 @@
                     <span class="tooltip1">Accepted parcel</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-cart-alt'></i>
                         <span class="link_names"> COLLECTED</span>
 
@@ -110,7 +110,7 @@
                     <span class="tooltip">Collected</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-anchor'></i>
                         <span class="link_names"> SHIPPED</span>
 
@@ -118,7 +118,7 @@
                     <span class="tooltip">Shipped</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-pointer'></i>
                         <span class="link_names"> IN-TRANSIT</span>
 
@@ -126,7 +126,7 @@
                     <span class="tooltip">In-transit</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bxs-message-square-check'></i>
                         <span class="link_names"> ARRIVED</span>
 
@@ -134,7 +134,7 @@
                     <span class="tooltip">Arrived</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bxs-truck'></i>
                         <span class="link_names">OUT FOR DELIVERY</span>
 
@@ -142,7 +142,7 @@
                     <span class="tooltip1">Out for delivery</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-check'></i>
                         <span class="link_names">READY FOR PICKUP</span>
 
@@ -150,7 +150,7 @@
                     <span class="tooltip1">Ready for pickup</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-like'></i>
                         <span class="link_names"> DELIVERED</span>
 
@@ -158,7 +158,7 @@
                     <span class="tooltip">Delivered</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-user-check'></i>
                         <span class="link_names"> PICKED-UP</span>
 
@@ -166,7 +166,7 @@
                     <span class="tooltip">Picked-up</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-shield-x'></i>
                         <span class="link_names">DELIVERY FAILED</span>
 
@@ -175,7 +175,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-trip'></i>
                         <span class="link_names">TRACK PARCELS</span>
 
@@ -184,7 +184,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="homepage.php">
                         <i class='bx bx-clipboard'></i>
                         <span class="link_names">REPORT</span>
 
