@@ -134,7 +134,7 @@ $row = mysqli_fetch_assoc($result);
 
 
     <div class="container">
-        <div class="title">New Branch</div>
+        <div class="title">Edit Branch</div>
         <div class="content">
             <form action="branch_update.php?id=<?php echo $row['id'] ?>" method="POST">
                 <div class="user-details">
