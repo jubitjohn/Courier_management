@@ -1,5 +1,6 @@
 <?php include('header.php') ?>
 <?php include('library.php') ?>
+<?php include('form_validation.php') ?>
 
 
 
@@ -20,6 +21,7 @@
                                 <div class=" card card-body">
                                     <label> Name</label>
                                     <input type="text" name="sender-name" placeholder="name">
+                                    
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -118,7 +120,7 @@
                                     <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
                                 </div>
                             </div>
-
+                         
 
 
 
@@ -138,5 +140,5 @@
     </div>
 
 
-
+  
 </body>

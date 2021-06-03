@@ -112,7 +112,7 @@
 
 <body>
     <?php include('header.php') ?>
-    <?php include('sidemenu.php') ?>
+   
 
 
 
@@ -154,4 +154,5 @@
             </form>
         </div>
     </div>
+    <?php include('sidemenu.php') ?>
 </body>
