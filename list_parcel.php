@@ -3,15 +3,39 @@
 <?php include_once('db_connect.php') ?>;
 
 <?php include('library.php') ?>;
+<?php
+$status = $_GET['id'];
+?>
 <div class="container">
+    <div class="alert-success card-body">
+        <?php
+        if ($status == 11) {
+            echo "Courier Deleted Successfully";
+        } else if ($status == 12) {
+            echo "Deletion Failed try again";
+        } else if ($status == 21) {
+            echo "Updation Successful";
+        } else if ($status == 22) {
+            echo "Updation Failed";
+        } else if ($status == 31) {
+            echo "Courier Added";
+        } else if ($status == 32) {
+            echo "Could'nt add Courier,Try again";
+        }
+
+        ?></div>
     <div class="col-lg-12">
         <div class="card card-outline card-primary">
             <div class="card-header">
                 <div class="card-tools">
-                    <a class="btn btn-block btn-sm btn-default btn-flat border-primary "
-                        href="./index.php?page=new_parcel"><i class="fa fa-plus"></i> Add New</a>
+                    <a class="btn btn-block btn-sm btn-default btn-flat border-primary " href="add_parcel.php"><i
+                            class="fa fa-plus"></i> Add New</a>
                 </div>
             </div>
+
+
+
+
             <div class="card-body">
                 <table class="table tabe-hover table-bordered" id="list">
                     <!-- <colgroup>
@@ -68,10 +92,10 @@
                                         class="btn btn-primary btn-flat ">
                                         <i class="fas fa-edit"></i>
                                     </a>
-                                    <button type="button" class="btn btn-danger btn-flat delete_parcel"
-                                        data-id="<?php echo $row['id'] ?>">
+                                    <a href="p_deletepage.php?id=<?php echo $row['id'] ?>"
+                                        class="btn btn-danger btn-flat ">
                                         <i class="fas fa-trash"></i>
-                                    </button>
+                                    </a>
                                 </div>
                             </td>
                         </tr>

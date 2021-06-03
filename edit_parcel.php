@@ -107,7 +107,7 @@ $row = mysqli_fetch_assoc($result);
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
-                                <select name="p_status" id="status" value="<?php echo $row['p_status'] ?>">
+                                <select name="p_status" id="status">
                                     <option value="Accepted Parcel"
                                         <?php if ($row['p_status'] == 'Accepted') echo ' selected="selected"'; ?>>
                                         Accepted

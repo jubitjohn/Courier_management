@@ -24,11 +24,20 @@ $sql = "UPDATE parcel set reference_no ='$p_ref',sender_name='$s_name',sender_ad
 
 /*(reference_no,sender_name,sender_address,sender_contact,recipient_name,recipient_address,recipient_contact,from_branch_id,to_branch_id,p_weight,p_price,p_status)
 VALUES (' $p_ref',' $s_name','$s_ad','$s_contact','$r_name','$r_ad',' $r_contact',' $p_frm_b','$p_to_b','$p_weight','$p_price','$p_status');";*/
+$sql1 = "UPDATE parcel_tracks set parcel_id ='$p_ref',parcel_status='$p_status' where id= $id ;";
+
+//$sql1 ="UPADTE 
+//parcel_tracks SET parcel_id='$p_ref',parcel_status='$p_status';";
 
 $result = mysqli_query($conn, $sql);
-if ($result) {
-    echo "data added";
+$result1 = mysqli_query($conn, $sql1);
+
+
+if ($result || $result1) {
+    header("Location: list_parcel.php?id=21");
+    exit();
 } else {
-    echo "error data not added";
+    header("Location: list_parcel.php?id=22");
+    exit();
 }
 ?>
