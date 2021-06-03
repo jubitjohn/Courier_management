@@ -12,7 +12,7 @@ $id = $_GET['id'];
         <div class="card-body">
             <form action="delete_branch.php?id=<?php echo $id ?>" method="POST">
                 <input class="btn btn-danger" type="submit" value="Delete">
-                <a href="list_parcel.php" class="btn btn-info">Cancel</a>
+                <a href="list_branch.php" class="btn btn-info">Cancel</a>
             </form>
         </div>
 
