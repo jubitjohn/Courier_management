@@ -58,7 +58,7 @@
                                         <button type="button" class="btn btn-info btn-flat view_parcel" data-id="<?php echo $row['id'] ?>">
                                             <i class="fas fa-eye"></i>
                                         </button>
-                                        <a href="index.php?page=edit_parcel&id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
+                                        <a href="edit_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
                                             <i class="fas fa-edit"></i>
                                         </a>
                                         <button type="button" class="btn btn-danger btn-flat delete_parcel" data-id="<?php echo $row['id'] ?>">
