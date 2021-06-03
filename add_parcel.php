@@ -21,7 +21,7 @@
                                 <div class=" card card-body">
                                     <label> Name</label>
                                     <input type="text" name="sender-name" placeholder="name">
-                                    
+
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -81,7 +81,7 @@
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
-                                <select name="p_status" id="status">
+                                <select name="p_status" id="status" class="form-select">
                                     <option value="Accepted Parcel">Accepted Parcel</option>
                                     <option value="Collected">Collected</option>
                                     <option value="Shipped">Shipped</option>
@@ -120,7 +120,7 @@
                                     <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
                                 </div>
                             </div>
-                         
+
 
 
 
@@ -140,5 +140,5 @@
     </div>
 
 
-  
+
 </body>
