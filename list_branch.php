@@ -38,7 +38,7 @@
                         $qry = "SELECT * from branches;";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
-                            echo "Query Succesful";
+                            echo " ";
                         } else {
                             echo "Query Corrupt";
                         }
