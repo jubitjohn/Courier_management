@@ -315,7 +315,8 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
         </section>
 
     </div>
-
+  
+    
     <script>
     let btn = document.querySelector("#btn");
     let sidebar = document.querySelector(".sidebar");
@@ -330,6 +331,8 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
         sidebar.classList.toggle("active");
     }
     </script>
+   
+     
 </body>
 
 </html>
