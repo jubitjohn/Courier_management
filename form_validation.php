@@ -136,3 +136,51 @@ if(isset($_POST['Save'])) {
 ?>
 
 
+<!-- .errorMess{
+  color: red;
+}
+
+.success{
+  border: 2px solid green;
+}
+
+
+.error{
+  border: 2px solid red;
+}
+
+
+input{
+  outline: none;
+}
+</style>
+
+<script>
+const form = document.querySelector("form");
+const senderInput = document.querySelector("#sender_name");
+const receiverInput = document.querySelector("#receiver_name");
+const errorMessage = document.querySelector("#error");
+
+senderInput.addEventListener("input", (evt) => {
+  if(senderInput.value.length < 2)
+   senderInput.classList.add("error");
+  else
+  {
+   senderInput.classList.add("success");
+   senderInput.classList.remove("error");
+  }
+ 
+});
+
+
+
+form.addEventListener("submit", (evt) => {
+  const password = evt.target.elements.sender-name.value;
+  if(sender-name.length < 2)
+  {
+    errorMessage.innerText = "Password must be more than 8 characters"
+    evt.preventDefault();
+  }
+  
+});
+ </script> -->

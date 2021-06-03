@@ -20,8 +20,13 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
+
                                     <input type="text" id="sender_name" name="sender-name" placeholder="name">
                                    
+
+                                    <input type="text" name="sender-name" placeholder="name">
+
+
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -81,7 +86,7 @@
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
-                                <select name="p_status" id="status">
+                                <select name="p_status" id="status" class="form-select">
                                     <option value="Accepted Parcel">Accepted Parcel</option>
                                     <option value="Collected">Collected</option>
                                     <option value="Shipped">Shipped</option>
@@ -120,7 +125,7 @@
                                     <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
                                 </div>
                             </div>
-                         
+
 
 
 
@@ -129,55 +134,7 @@
                     <br>
 
                 </form>
-                <style>
-.errorMess{
-  color: red;
-}
-
-.success{
-  border: 2px solid green;
-}
-
-
-.error{
-  border: 2px solid red;
-}
-
-
-input{
-  outline: none;
-}
-</style>
-
-<script>
-const form = document.querySelector("form");
-const senderInput = document.querySelector("#sender_name");
-const receiverInput = document.querySelector("#receiver_name");
-const errorMessage = document.querySelector("#error");
-
-senderInput.addEventListener("input", (evt) => {
-  if(senderInput.value.length < 2)
-   senderInput.classList.add("error");
-  else
-  {
-   senderInput.classList.add("success");
-   senderInput.classList.remove("error");
-  }
- 
-});
-
-
-
-form.addEventListener("submit", (evt) => {
-  const password = evt.target.elements.sender-name.value;
-  if(sender-name.length < 2)
-  {
-    errorMessage.innerText = "Password must be more than 8 characters"
-    evt.preventDefault();
-  }
-  
-});
- </script>
+               
 
             </div>
             <?php include('sidemenu.php') ?>
@@ -188,5 +145,5 @@ form.addEventListener("submit", (evt) => {
     </div>
 
 
-  
+
 </body>
