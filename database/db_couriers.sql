@@ -86,7 +86,8 @@ VALUES
 (1, 'aakhil', 'aak'),
 (2, 'jubit', 'jun'),
 (3, 'anushika', 'anu'),
-(4, 'anju', 'anj');
+(4, 'anju', 'anj'),
+(5, 'jouhar', 'jou');
 
 
 
