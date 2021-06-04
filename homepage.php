@@ -19,7 +19,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
 <body>
 
-    <?php include('sidemenu.php') ?>
+
     <?php include('header.php') ?>
 
     <div class="home_content">
@@ -287,11 +287,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         </li>
                     </ul>
                 </div>
-               
+
             </div>
         </section>
 
     </div>
+    <?php include('sidemenu.php') ?>
 
 
     <script>
