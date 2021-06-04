@@ -241,12 +241,12 @@ body {
   
   
 }
-.sidebar.active ~ .home_content{
+.sidebar.active ~ .home_content{ 
   width: calc(100% - 240px);
   left: 260px;
   
    
-}
+} 
 
 .home_content .text {
   font-size: 25px;
