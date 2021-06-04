@@ -4,6 +4,8 @@
 
 <?php include('library.php') ?>;
 <?php
+$status = !empty($_GET['id']) ? $_GET['id'] : '0';
+?>
 
 <div class="container">
     <div class="alert-success card-body ms-5">
@@ -76,7 +78,7 @@
                                 <?php
                                     echo $row['p_status']
 
-                                ?>
+                                    ?>
                             </td>
                             <td class="text-center">
                                 <div class="btn-group">
