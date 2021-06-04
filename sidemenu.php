@@ -65,7 +65,7 @@
 
                 <li>
 
-                    <a href="#">
+                    <a href="staff-add.php">
                         <i class='bx bx-user-plus'></i>
                         <span class="link_names">ADD BRANCH STAFF </span>
                     </a>
