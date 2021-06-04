@@ -31,7 +31,16 @@
 
                     <span class="tooltip"> Search</span>
                 </li> -->
+                <li>
 
+                <a href="homepage.php">
+                <i class='bx bxs-dashboard'></i>
+                <span class="link_names"> DASHBOARD</span>
+                </a>
+
+                <span class="tooltip">Dashboard</span>
+
+                </li>
                 <li>
 
                     <a href="new_branch.php">

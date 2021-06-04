@@ -205,7 +205,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                 <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery';";
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready for Pickup';";
                                     $query_run = mysqli_query($connection, $query);
 
                                     $rows = mysqli_num_rows($query_run);
@@ -213,7 +213,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Out for delivery</p>
+                                <p>Ready for Pickup</p>
                             </div>
                             <div class="right">
                                 <i class='bx bxs-truck'></i>
@@ -228,7 +228,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                 <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready to deliver'";
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked up'";
                                     $query_run = mysqli_query($connection, $query);
 
                                     $rows = mysqli_num_rows($query_run);
@@ -236,7 +236,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Ready to deliver</p>
+                                <p>Picked up</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-check'></i>
@@ -270,7 +270,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                 <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked-up'";
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Delivered Unsuccesful'";
                                     $query_run = mysqli_query($connection, $query);
 
                                     $rows = mysqli_num_rows($query_run);
@@ -278,7 +278,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Picked-up</p>
+                                <p>Delivery Unsuccessful</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-user-check'></i>
@@ -287,30 +287,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         </li>
                     </ul>
                 </div>
-                <div class="row">
-                    <ul>
-                        <li>
-                            <div class="left">
-                                <?php
-                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
-
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Delivery unsuccessful'";
-                                    $query_run = mysqli_query($connection, $query);
-
-                                    $rows = mysqli_num_rows($query_run);
-
-                                    echo '<h1> ' . $rows . ' </h1>'
-                                    ?>
-
-                                <p>Unsuccessful delivery attempt</p>
-                            </div>
-                            <div class="right">
-                                <i class='bx bx-shield-x'></i>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
+               
             </div>
         </section>
 

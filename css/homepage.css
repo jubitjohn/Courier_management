@@ -55,6 +55,7 @@ section.body {
 }
 section.body div.cards div.row {
   padding: 5px 20px;
+  
   width: 1000px;
   
   /* width should be changed according to lap size*/
