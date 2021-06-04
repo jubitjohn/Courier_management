@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
+if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
 
 
-        <div class="text">Welcome Home</div>
+        <div class="text">Dashboard</div>
         <div class="home">
             <h1>Home</h1>
         </div>
@@ -39,15 +39,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT id from branches ORDER BY id";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT id from branches ORDER BY id";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Total Branches</p>
                             </div>
@@ -59,15 +59,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT id from parcel  ORDER BY id";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT id from parcel  ORDER BY id";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Total Parcels</p>
                             </div>
@@ -78,15 +78,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT id from staff  ORDER BY id";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT id from staff  ORDER BY id";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Total Staff</p>
                             </div>
@@ -102,15 +102,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Item accepted by courier'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Accepted Parcel'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Item accepted by courier</p>
                             </div>
@@ -122,15 +122,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Collected'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Collected'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
                                 <p>Collected</p>
                             </div>
                             <div class="right">
@@ -140,15 +140,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped';";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Shipped';";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Shipped</p>
                             </div>
@@ -164,15 +164,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'In-transit'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'In-transit'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>In-transit</p>
                             </div>
@@ -184,15 +184,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Arrived at destination'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Arrived'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p>Arrived at destination</p>
                             </div>
@@ -203,17 +203,17 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Out for delivery';";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready for Pickup';";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
-                                <p>Out for delivery</p>
+                                <p>Ready for Pickup</p>
                             </div>
                             <div class="right">
                                 <i class='bx bxs-truck'></i>
@@ -226,17 +226,17 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Ready to deliver'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked up'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
-                                <p>Ready to deliver</p>
+                                <p>Picked up</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-check'></i>
@@ -247,15 +247,15 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Order Delivered'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Order Delivered'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
                                 <p> Delivered</p>
                             </div>
@@ -268,17 +268,17 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         <li>
                             <div class="left">
                                 <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
+                                    $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Picked-up'";
-                                $query_run = mysqli_query($connection, $query);
+                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Delivered Unsuccesful'";
+                                    $query_run = mysqli_query($connection, $query);
 
-                                $rows = mysqli_num_rows($query_run);
+                                    $rows = mysqli_num_rows($query_run);
 
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
+                                    echo '<h1> ' . $rows . ' </h1>'
+                                    ?>
 
-                                <p>Picked-up</p>
+                                <p>Delivery Unsuccessful</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-user-check'></i>
@@ -287,34 +287,12 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
                         </li>
                     </ul>
                 </div>
-                <div class="row">
-                    <ul>
-                        <li>
-                            <div class="left">
-                                <?php
-                                $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
-
-                                $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Unsuccessful delivery attempt'";
-                                $query_run = mysqli_query($connection, $query);
-
-                                $rows = mysqli_num_rows($query_run);
-
-                                echo '<h1> ' . $rows . ' </h1>'
-                                ?>
-
-                                <p>Unsuccessful delivery attempt</p>
-                            </div>
-                            <div class="right">
-                                <i class='bx bx-shield-x'></i>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
+               
             </div>
         </section>
 
     </div>
+
 
     <script>
     let btn = document.querySelector("#btn");
@@ -330,12 +308,14 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])) {
         sidebar.classList.toggle("active");
     }
     </script>
+
+
 </body>
 
 </html>
 
 <?php
-}else{
+} else {
     header("Location: Logint.php");
     exit();
 }

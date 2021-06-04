@@ -1,5 +1,5 @@
 <?php include('header.php') ?>;
-<?php include('sidemenu.php') ?>;
+
 <?php include_once('db_connect.php') ?>;
 <?php include('library.php') ?>;
 <?php
@@ -21,8 +21,9 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
 <div class="container ">
-    <div>
-        <table style="width:75%" class="table-responsive table m-5 table-danger table-bordered tab card card-outline  ">
+    <div class="card card-body">
+        <table style="width:75%"
+            class="table-responsive table m-5 table-success table-bordered tab card card-outline  ">
             <tr class="">
                 <th>Reference no:</th>
                 <td><?php echo $row['reference_no'] ?></td>
@@ -76,7 +77,12 @@ $row = mysqli_fetch_assoc($result);
             </tr>
 
         </table>
+        <div class="row">
+            <div class="ms-5">
+                <a href="list_parcel.php" class="btn btn-danger col-2">Back</a>
+            </div>
+        </div>
     </div>
 
-
+    <?php include('sidemenu.php') ?>;
 </div>

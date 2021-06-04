@@ -10,12 +10,12 @@ create table branches (
     PRIMARY KEY(id)
 );
 
-INSERT INTO branches (ID, BranchID, BranchName, District , City,ContactNum,Pin_code)
+INSERT INTO branches (id, BranchID, BranchName, District , City,ContactNum,Pin_code)
 
  VALUES
   (1,  '10',     'firstbranch',  'Ernakulam',   'Kochi1',  '+91123456789',   '682020'),
-  (3,  '20',     'secondbranch', 'Idukki',      'kochi2',  '+91098765432',   '682021'),
-  (4,  '30',     'thirdbranch',  'Kollam',      'kochi3',  '+91234509876',   '682022');
+  (2,  '20',     'secondbranch', 'Idukki',      'kochi2',  '+91098765432',   '682021'),
+  (3,  '30',     'thirdbranch',  'Kollam',      'kochi3',  '+91234509876',   '682022');
 
 
  CREATE TABLE parcel(
@@ -86,7 +86,8 @@ VALUES
 (1, 'aakhil', 'aak'),
 (2, 'jubit', 'jun'),
 (3, 'anushika', 'anu'),
-(4, 'anju', 'anj');
+(4, 'anju', 'anj'),
+(5, 'jouhar', 'jou');
 
 
 

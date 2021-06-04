@@ -1,7 +1,8 @@
+<?php include('header.php') ?>;
+<?php include_once('db_connect.php') ?>;
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('library.php') ?>;
     <style type="text/css">
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -15,7 +16,7 @@
         body {
             height: 100vh;
 
-            
+
 
         }
 
@@ -24,7 +25,7 @@
             width: 100%;
             background-color: #fff;
             padding: 25px 30px;
-            margin-left: 150px;
+            margin-left: 300px;
             margin-top: 80px;
             border-radius: 5px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -107,49 +108,64 @@
         }
     </style>
 
-
 </head>
+<?php
+
+$id = $_GET['id'];
+
+?>
+<?php
+
+$qry = "SELECT * from branches where id = $id;";
+$result = mysqli_query($conn, $qry);
+if ($result) {
+    echo "";
+} else {
+    echo "Query Corrupt";
+}
+$row = mysqli_fetch_assoc($result);
+?>
 
 <body>
-    <?php include('header.php') ?>
-   
+    
+    
 
 
 
 
     <div class="container">
-        <div class="title">New Branch</div>
+        <div class="title">Edit Branch</div>
         <div class="content">
-            <form action="insert.php" method="POST">
+            <form action="branch_update.php?id=<?php echo $row['id'] ?>" method="POST">
                 <div class="user-details">
 
                     <div class="input-box">
                         <span class="details">Branch Id</span>
-                        <input type="text" placeholder="Enter your Branch Id" name="branch_id" required>
+                        <input type="text" placeholder="" name="branch_id" value="<?php echo $row['BranchID'] ?>" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Branch Name</span>
-                        <input type="text" placeholder="Enter your Branch Name" name="branch_name" required>
+                        <input type="text" placeholder=" " name="branch_name"  value="<?php echo $row['BranchName'] ?>"required>
                     </div>
                     <div class="input-box">
                         <span class="details">District</span>
-                        <input type="text" placeholder="Enter your District" name="district" required>
+                        <input type="text" placeholder="" name="district" value="<?php echo $row['District'] ?>" required>
                     </div>
                     <div class="input-box">
                         <span class="details">City</span>
-                        <input type="text" placeholder="Enter your City" name="city" required>
+                        <input type="text" placeholder="" name="city" value="<?php echo $row['City'] ?>" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Contact Number</span>
-                        <input type="text" placeholder="Enter your Contact Number" name="contact_number" required>
+                        <input type="text" placeholder="" name="contact_number" value="<?php echo $row['ContactNum'] ?>" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Pin Code</span>
-                        <input type="text" placeholder="Enter your Pin Code" name="pincode" required>
+                        <input type="text" placeholder="" name="pincode" value="<?php echo $row['Pin_code'] ?>" required>
                     </div>
                 </div>
                 <div class="button" name="submit">
-                    <input type="submit" value="Save">
+                    <input type="submit" value="Update">
                 </div>
             </form>
         </div>

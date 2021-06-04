@@ -25,14 +25,11 @@ VALUES (' $p_ref','$p_status');";
 
 $result = mysqli_query($conn, $sql);
 $result1 = mysqli_query($conn, $sql1);
-if ($result) {
-    echo "data added";
+if ($result && $result1) {
+    header("Location: list_parcel.php?id=31");
+    exit();
 } else {
-    echo "error data not added";
-}
-if ($result1) {
-    echo "data1 added";
-} else {
-    echo "error data1 not added";
+    header("Location: list_parcel.php?id=32");
+    exit();
 }
 ?>

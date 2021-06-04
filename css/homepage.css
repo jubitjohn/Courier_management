@@ -10,11 +10,11 @@
 body {
   position: relative;
   width: 100%;
-  
+ 
   
 }
 
-.home_content {
+ .home_content {
   width: calc(100%-78px);
   position: absolute;
   height: 100%;
@@ -55,7 +55,9 @@ section.body {
 }
 section.body div.cards div.row {
   padding: 5px 20px;
+  
   width: 1000px;
+  
   /* width should be changed according to lap size*/
 }
 */ section.body div.cards div.row ul {
