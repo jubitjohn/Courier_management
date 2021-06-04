@@ -4,12 +4,9 @@
 
 <?php include('library.php') ?>;
 <?php
-$status = !empty($_GET['id']) ? $_GET['id'] : '0';
 
-
-?>
 <div class="container">
-    <div class="alert-success card-body">
+    <div class="alert-success card-body ms-5">
         <?php
         if ($status == 11) {
             echo "Courier Deleted Successfully";
@@ -27,7 +24,7 @@ $status = !empty($_GET['id']) ? $_GET['id'] : '0';
 
         ?></div>
     <div class="col-lg-12">
-        <div class="card card-outline card-primary">
+        <div class="card card-outline card-primary ms-5">
             <div class="card-header">
                 <div class="card-tools">
                     <a class="btn btn-block btn-sm btn-default btn-flat border-primary " href="add_parcel.php"><i

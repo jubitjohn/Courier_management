@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 <?php include('library.php') ?>
-<?php include('form_validation.php') ?>
+
 
 
 
@@ -20,8 +20,10 @@
                             <div class="card card-body">
                                 <div class=" card card-body">
                                     <label> Name</label>
-                                    <input type="text" name="sender-name" placeholder="name">
-                                    
+
+                                    <input type="text" id="sender_name" name="sender-name" placeholder="name">
+                                   
+
                                 </div>
                                 <div class=" card card-body">
                                     <label> Sender address</label>
@@ -29,7 +31,7 @@
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="sender-contact">
+                                    <input id="number" type="number" name="sender-contact">
                                 </div>
                             </div>
 
@@ -52,7 +54,7 @@
                                 </div>
                                 <div class=" card card-body">
                                     <label> Contact</label>
-                                    <input type="text" name="receiver-contact" placeholder="">
+                                    <input type="number" name="receiver-contact" placeholder="">
                                 </div>
                             </div>
 
@@ -81,7 +83,7 @@
                             </div>
                             <div class=" card card-body">
                                 <label> Status</label>
-                                <select name="p_status" id="status">
+                                <select name="p_status" id="status" class="form-select">
                                     <option value="Accepted Parcel">Accepted Parcel</option>
                                     <option value="Collected">Collected</option>
                                     <option value="Shipped">Shipped</option>
@@ -114,13 +116,13 @@
                             <div class="row d-flex ">
 
                                 <div class="col col-lg-6 ps-4"> <input class="btn btn-success col-lg-8 " type="submit"
-                                        name="Save" value=" Save">
+                                        name="Save" value="Save">
                                 </div>
                                 <div class="col col-6">
                                     <input class="btn btn-dark col-lg-8 " type="reset" name="reset" value=" reset">
                                 </div>
                             </div>
-                         
+
 
 
 
@@ -129,7 +131,7 @@
                     <br>
 
                 </form>
-
+               
 
             </div>
             <?php include('sidemenu.php') ?>
@@ -140,5 +142,5 @@
     </div>
 
 
-  
+
 </body>

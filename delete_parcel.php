@@ -14,7 +14,7 @@ $sql1 = "DELETE FROM parcel_tracks WHERE id='$id';";
 
 $delresult = mysqli_query($conn, $sql);
 $delresult1 = mysqli_query($conn, $sql1);
-if ($delresult || $delresult1) {
+if ($delresult && $delresult1) {
     header("Location: list_parcel.php?id=11");
     exit();
 } else {

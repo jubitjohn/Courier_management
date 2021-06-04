@@ -25,7 +25,7 @@ VALUES (' $p_ref','$p_status');";
 
 $result = mysqli_query($conn, $sql);
 $result1 = mysqli_query($conn, $sql1);
-if ($result || $result1) {
+if ($result && $result1) {
     header("Location: list_parcel.php?id=31");
     exit();
 } else {

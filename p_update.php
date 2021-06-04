@@ -30,10 +30,11 @@ $sql1 = "UPDATE parcel_tracks set parcel_id ='$p_ref',parcel_status='$p_status' 
 //parcel_tracks SET parcel_id='$p_ref',parcel_status='$p_status';";
 
 $result = mysqli_query($conn, $sql);
+
 $result1 = mysqli_query($conn, $sql1);
 
 
-if ($result || $result1) {
+if ($result && $result1) {
     header("Location: list_parcel.php?id=21");
     exit();
 } else {
