@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $mysqli = new mysqli('localhost','root','root','db_couriers') or die(mysqli_error($mysqli));
 
 $update=false;
