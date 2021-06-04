@@ -41,8 +41,8 @@
             </div>
             <div class="row">
                 <form action="courier-track-details.php" method="post" class="row">
-                    <div class=" d-flex justify-content-center "> <input class="col-4" type="text" id="track_id"
-                            name="trackid">
+                    <div class=" d-flex justify-content-center "> <input class="col-4 border-dark" type="text"
+                            id="track_id" name="trackid" placeholder="eg:456">
                         <div class="row  "> <input class="col btn btn-danger" type="submit" name="track"
                                 value="Track"><br><br>
                         </div>
@@ -61,7 +61,6 @@
     </div>
 
     <footer class="fixed-bottom">
-  
         <?php include('footer.php') ?>
     </footer>
 
