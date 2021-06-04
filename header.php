@@ -28,7 +28,7 @@
         color: #fff;
         font-size: 45px;
         font-weight: 800;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
 
     }
 
