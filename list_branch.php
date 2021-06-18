@@ -28,7 +28,8 @@ $status = !empty($_GET['id']) ? $_GET['id'] : '0';
         <div class="card card-outline card-primary">
             <div class="card-header">
                 <div class="card-tools">
-                    <a class="btn btn-block btn-sm btn-default btn-flat border-primary " href="new_branch.php"><i class="fa fa-plus"></i> Add New</a>
+                    <a class="btn btn-block btn-sm btn-default btn-flat border-primary " href="new_branch.php"><i
+                            class="fa fa-plus"></i> Add New</a>
                 </div>
             </div>
             <div class="card-body">
@@ -64,30 +65,30 @@ $status = !empty($_GET['id']) ? $_GET['id'] : '0';
                         }
                         while ($row = mysqli_fetch_assoc($result)) :
                         ?>
-                            <tr>
-                                <td class="text-center"><?php echo $i++ ?></td>
-                                <td><b><?php echo $row['BranchID'] ?></b></td>
-                                <td><b><?php echo $row['BranchName'] ?></b></td>
-                                <td><b><?php echo $row['District'] ?></b></td>
-                                <td><b><?php echo $row['City'] ?></b></td>
-                                <td><b><?php echo $row['ContactNum'] ?></b></td>
-                                <td><b><?php echo $row['Pin_code'] ?></b></td>
+                        <tr>
+                            <td class="text-center"><?php echo $i++ ?></td>
+                            <td><b><?php echo $row['BranchID'] ?></b></td>
+                            <td><b><?php echo $row['BranchName'] ?></b></td>
+                            <td><b><?php echo $row['District'] ?></b></td>
+                            <td><b><?php echo $row['City'] ?></b></td>
+                            <td><b><?php echo $row['ContactNum'] ?></b></td>
+                            <td><b><?php echo $row['Pin_code'] ?></b></td>
 
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-info btn-flat view_parcel" data-id="<?php echo $row['id'] ?>">
-                                            <i class="fas fa-eye"></i>
-                                        </button>
-                                        <a href="edit_branch.php?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-flat ">
-                                            <i class="fas fa-edit"></i>
-                                        </a>
-                                        <a href="delete_com.php?id=<?php echo $row['id'] ?>" class="btn btn-danger btn-flat ">
-                                            <i class="fas fa-trash"></i>
-                                        </a>
+                            <td class="text-center">
+                                <div class="btn-group">
 
-                                    </div>
-                                </td>
-                            </tr>
+                                    <a href="edit_branch.php?id=<?php echo $row['id'] ?>"
+                                        class="btn btn-primary btn-flat ">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="delete_com.php?id=<?php echo $row['id'] ?>"
+                                        class="btn btn-danger btn-flat ">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
                         <?php endwhile; ?>
                     </tbody>
                 </table>
@@ -101,38 +102,38 @@ $status = !empty($_GET['id']) ? $_GET['id'] : '0';
 
 
 <style>
-    table td {
-        vertical-align: middle !important;
-    }
+table td {
+    vertical-align: middle !important;
+}
 </style>
 <script>
-    $(document).ready(function() {
-        $('#list').dataTable()
-        $('.view_parcel').click(function() {
-            uni_modal("Parcel's Details", "view_parcel.php?id=" + $(this).attr('data-id'), "large")
-        })
-        $('.delete_parcel').click(function() {
-            _conf("Are you sure to delete this parcel?", "delete_parcel", [$(this).attr('data-id')])
-        })
+$(document).ready(function() {
+    $('#list').dataTable()
+    $('.view_parcel').click(function() {
+        uni_modal("Parcel's Details", "view_parcel.php?id=" + $(this).attr('data-id'), "large")
     })
+    $('.delete_parcel').click(function() {
+        _conf("Are you sure to delete this parcel?", "delete_parcel", [$(this).attr('data-id')])
+    })
+})
 
-    function delete_parcel($id) {
-        start_load()
-        $.ajax({
-            url: 'ajax.php?action=delete_parcel',
-            method: 'POST',
-            data: {
-                id: $id
-            },
-            success: function(resp) {
-                if (resp == 1) {
-                    alert_toast("Data successfully deleted", 'success')
-                    setTimeout(function() {
-                        location.reload()
-                    }, 1500)
+function delete_parcel($id) {
+    start_load()
+    $.ajax({
+        url: 'ajax.php?action=delete_parcel',
+        method: 'POST',
+        data: {
+            id: $id
+        },
+        success: function(resp) {
+            if (resp == 1) {
+                alert_toast("Data successfully deleted", 'success')
+                setTimeout(function() {
+                    location.reload()
+                }, 1500)
 
-                }
             }
-        })
-    }
+        }
+    })
+}
 </script>
