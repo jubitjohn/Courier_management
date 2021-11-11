@@ -104,7 +104,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                 <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Accepted Parcel'";
+                                    $query = "SELECT * FROM parcel WHERE p_status = 'Accepted Parcel'";
                                     $query_run = mysqli_query($connection, $query);
 
                                     $rows = mysqli_num_rows($query_run);
