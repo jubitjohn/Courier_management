@@ -23,14 +23,14 @@
         </div>
         <div>
             <ul class="nav_list">
-                <!--  <li>
+                 <!-- <li>
 
                     <i class='bx bx-search'></i>
                     <input type="text" placeholder="Search" />
 
 
                     <span class="tooltip"> Search</span>
-                </li> -->
+                </li>  -->
                 <li>
 
                 <a href="homepage.php">
@@ -76,7 +76,7 @@
 
                 <li>
 
-                    <a href="#">
+                    <a href="staff-process.php">
                         <i class='bx bx-list-ol'></i>
                         <span class="link_names">BRANCH STAFF LIST </span>
                     </a>
@@ -104,7 +104,7 @@
                 </li>
 
                 <li>
-                    <a href="courier-track.php">
+                    <a href="courier-track-details.php">
                         <i class='bx bx-trip'></i>
                         <span class="link_names">TRACK PARCELS</span>
 
