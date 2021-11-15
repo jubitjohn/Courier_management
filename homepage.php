@@ -10,7 +10,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <title>Homepage|Dashboard</title>
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/homepage.css"  />
     <link rel="stylesheet" href="css/sidemenu.css" />
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -112,7 +112,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Item accepted by courier</p>
+                                   <a href="parcel-accepted.php">Item accepted by courier</a>
                             </div>
                             <div class="right">
                                 <i class='bx bx-message-square-check'></i>
@@ -131,7 +131,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
-                                <p>Collected</p>
+                                <a href="">Collected</a>
                             </div>
                             <div class="right">
                                 <i class='bx bx-cart-alt'></i>
@@ -150,7 +150,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Shipped</p>
+                                <a href="parcel-shipped.php">Shipped</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-anchor'></i>
@@ -163,7 +163,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                     <ul>
                         <li>
                             <div class="left">
-                                <?php
+                            <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
                                     $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Intransit'";
@@ -174,7 +174,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>In-transit</p>
+                               
+                                <a href="parcel-intransit.php">In-transit</a> 
+                                         
                             </div>
                             <div class="right">
                                 <i class='bx bx-pointer'></i>
@@ -186,7 +188,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                 <?php
                                     $connection = mysqli_connect("localhost", "root", "root", "db_couriers");
 
-                                    $query = "SELECT * FROM parcel_tracks WHERE parcel_status = 'Arrived'";
+                                    $query = "SELECT * FROM parcel WHERE p_status = 'Arrived'";
                                     $query_run = mysqli_query($connection, $query);
 
                                     $rows = mysqli_num_rows($query_run);
@@ -194,7 +196,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Arrived at destination</p>
+                                <a href="parcel-arrived.php">Arrived at destination</a>
                             </div>
                             <div class="right">
                                 <i class='bx bxs-message-square-check'></i>
@@ -213,7 +215,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Ready for Pickup</p>
+                                <a href="ready-for-pickup.php">Ready for Pickup</a>
                             </div>
                             <div class="right">
                                 <i class='bx bxs-truck'></i>
@@ -236,7 +238,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Picked up</p>
+                                <a href="picked-up.php">Picked up</a>
                             </div>
                             <div class="right">
                                 <i class='bx bx-check'></i>
@@ -257,7 +259,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p> Delivered</p>
+                                <a href="delivered.php"> Delivered</a>
                             </div>
                             <div class="right">
                                 <i class='bx bx-like'></i>
@@ -278,7 +280,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                                     echo '<h1> ' . $rows . ' </h1>'
                                     ?>
 
-                                <p>Delivery Unsuccessful</p>
+                                <a href="delivery-unsuccessful.php">Delivery Unsuccessful</p>
                             </div>
                             <div class="right">
                                 <i class='bx bx-user-check'></i>

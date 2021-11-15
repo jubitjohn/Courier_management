@@ -58,7 +58,7 @@ section.body div.cards div.row {
 
   /* width should be changed according to lap size*/
 }
-*/ section.body div.cards div.row ul {
+ section.body div.cards div.row ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -87,16 +87,5 @@ section.body div.cards div.row ul li i:hover {
   font-size: 70px;
   transition: all ease 0.5s;
 }
-/*::-webkit-scrollbar {
-     width: 5px;
-   }
-   
-   ::-webkit-scrollbar-track {
-     background: transparent !important;
-   }
-   
-   ::-webkit-scrollbar-thumb {
-     background: #bbbbbb;
-     border-radius: 10px;
-   }
-*/
+
+

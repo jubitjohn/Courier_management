@@ -60,7 +60,7 @@ $status = !empty($_GET['Status']) ? $_GET['Status'] : 'Intransit';
                         <?php
                         $i = 1;
 
-                        $qry = "SELECT * FROM parcel WHERE p_status = 'Intransit'";
+                        $qry = "SELECT * FROM parcel WHERE p_status = 'Picked Up'";
                         $result = mysqli_query($conn, $qry);
                         if ($result) {
                             echo "Query Succesful";
